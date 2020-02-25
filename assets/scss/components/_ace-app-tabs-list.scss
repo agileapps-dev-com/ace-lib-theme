@@ -1,0 +1,18 @@
+ace-app-tabs-list {
+    ul.objects-container {
+        li {
+            a.item-info {
+                @include hover-focus() {
+                    border: $app-tabs-list-border-focus;
+                    background-color: $app-tabs-list-background-color-focus;
+                    color: color-yiq($app-tabs-list-background-color-focus);
+                    outline: none;
+                }
+            }
+            a.item-info.active-item {
+                background-color: $app-tabs-list-active-item-background-color;
+                color: color-yiq($app-tabs-list-active-item-background-color);
+            }
+        }
+    }
+}

@@ -1,0 +1,10 @@
+ace-user-profile {
+    .user-info-text-block {
+        .profile-name {
+            @include font($user-profile-font-size, $user-profile-font-weight, $user-profile-font-variant);
+        }
+        .user-role {
+            @include font($user-profile-font-size, $user-profile-font-weight, $user-profile-font-variant);
+        }
+    }
+}

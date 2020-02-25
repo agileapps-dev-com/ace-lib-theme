@@ -12,6 +12,16 @@
     border-radius: $input-field-border-radius;
     border: $input-field-border-width solid $input-field-border-color;
 
+    &:enabled {
+      background-color: $input-field-background-color;
+      color: $input-field-text-color;
+    }
+    &:not(:enabled),
+    &[readonly] {
+      background-color: $input-field-disabled-background-color;
+      color: $input-field-text-color;
+    }
+
     &:focus {
       border: $input-field-border-width solid $input-field-border-color-focus;
       box-shadow: none;
@@ -23,6 +33,8 @@
 .input-group {
   border-radius: $input-field-border-radius;
   border: $input-field-border-width solid $input-field-border-color;
+  background-color: $input-field-background-color;
+  overflow: hidden;
   .form-control {
     &.ace-field-input,
     &.ace-field-textarea,
@@ -67,10 +79,8 @@
       border-color: $input-field-error-border-color;
     }
     .input-group {
-      &:focus-within {
-        border: $input-field-border-width solid $input-field-error-border-color;
-        box-shadow: none;
-      }
+      border: $input-field-border-width solid $input-field-error-border-color;
+      box-shadow: none;
     }
     .help-block {
       .block-element {
@@ -145,6 +155,14 @@ aac-file-field {
         border-color: darken($input-type-image-background-color, 10%);
         box-shadow: none;
       }
+    }
+  }
+}
+
+aac-picklist-field {
+  .input-group {
+    input.mat-chip-input {
+      background-color: transparent;
     }
   }
 }

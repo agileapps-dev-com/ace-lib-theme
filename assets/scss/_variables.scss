@@ -1,8 +1,13 @@
-// Variables
+/* DOCUMENT INFORMATION
+	- Document: ace-lib-theme Theme
+  - Version:  1.0.3
+  - Content: Default variables for the theme.
+*/
 
-// Color system
+/* COLORS
+	- Gray color variables.
+*/
 
-//grays
 $white: #fff !default;
 $gray-100: #f8f9fa !default;
 $gray-200: #e9ecef !default;
@@ -15,28 +20,22 @@ $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
 $black: #000 !default;
 
-// primary color pallete
-// $color-primary: () !default;
-// $color-primary: map-merge(
-//   (
-//     "50": #e3f2fd,
-//     "100": #bbdefb,
-//     "200": #90caf9,
-//     "300": #64b5f6,
-//     "400": #42a5f5,
-//     "500": #2196f3,
-//     "600": #1e88e5,
-//     "700": #1976d2,
-//     "800": #1565c0,
-//     "900": #0d47a1
-//   ),
-//   $color-primary
-// );
+/* COLORS
+	- Main theme color variables.
+*/
 $primary: #6200ee !default;
 $secondary: #03dac6 !default;
 $error: #b00020 !default;
 $light: $gray-100 !default;
 $dark: $gray-800 !default;
+
+/* DEFAULT THEME COLORS MAP
+	- primary
+	- secondary
+	- error
+	- light
+	- dark
+*/
 
 $theme-colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
@@ -60,14 +59,18 @@ $yiq-text-light: $white !default;
 
 $spacer: 1rem !default;
 
-//Body
+/* ========== Color Scheme ========== */
+$color-scheme: light !default; // possible values are 'light' or 'dark'
+
+
+/* ========== BODY ========== */
 //
 // Settings for the `<body>` element.
 
 $body-bg: $white !default;
 $body-color: $gray-900 !default;
 
-// Links
+/* ========== LINKS ========== */
 //
 // Style anchor elements.
 
@@ -76,18 +79,16 @@ $link-decoration: none !default;
 $link-hover-color: darken($link-color, 15%) !default;
 $link-hover-decoration: underline !default;
 
-// Components
+/* ========== COMMON ========== */
 //
 // Define common padding and border radius sizes and more.
 
 $border-width: 1px !default;
 $border-color: $gray-300 !default;
-
 $border-radius: 0 !default; //0.25rem
-
 $box-shadow: 0 0.5rem 1rem rgba($black, 0.15) !default;
 
-// Typography
+/* ========== TYPOGRAPHY ========== */
 
 $font-family-base: Arial, Helvetica, sans-serif !default;
 $font-size-base: 1rem !default;
@@ -110,34 +111,33 @@ $h6-font-size: $font-size-base !default;
 
 $text-muted: $gray-600 !default;
 
-// Tables
+/* ========== TABLE ========== */
 
 $table-cell-padding: 0.25rem !default;
 $table-select-cell-width: 0 !default; // flex-grow values;
-
 $table-color: $body-color !default;
 $table-bg: null !default;
 $table-accent-bg: rgba($black, 0.05) !default;
 $table-hover-color: $table-color !default;
 $table-hover-bg: rgba($black, 0.075) !default;
 $table-active-bg: $table-hover-bg !default;
-
 $table-border-width: $border-width !default;
 $table-border-color: $border-color !default;
-
 $table-head-bg: $gray-200 !default;
 $table-head-color: $gray-700 !default;
-
 $table-striped-order: odd !default;
-
 $table-caption-color: $text-muted !default;
 
-// Form and inputs
+/* ========== FORM INPUTS ========== */
 $input-label-font-weight: $font-weight-normal !default;
 
 // Input fields, like text, textarea, select
 $input-field-border-width: $border-width !default;
 $input-field-border-color: $border-color !default;
+$input-field-background-color: theme-color("light") !default;
+$input-field-text-color: $body-color !default;
+$input-field-disabled-background-color: darken(theme-color("light"), 5%) !default;
+$input-field-background-color-focus: $input-field-background-color !default;
 $input-field-border-color-focus: theme-color("primary") !default;
 $input-field-border-radius: $border-radius !default;
 
@@ -154,7 +154,8 @@ $input-field-error-border-color: theme-color("error") !default;
 $input-field-error-text-color: theme-color("error") !default;
 $input-field-error-font-size: 85% !default;
 
-// field type specific config
+// Specific field types
+
 //email field
 $input-type-email-display-send-mail-button: false !default;
 //lookup field
@@ -173,35 +174,33 @@ $input-type-image-border-radius: 50% !default;
 
 //button variables
 $btn-padding: 0.5rem 0.75rem !default;
-$btn-white-space: null !default; // nowrap
+$btn-white-space: null !default; //  Set to `nowrap` to prevent text wrapping
 $btn-line-height: $line-height-base !default;
 $btn-border-width: $border-width !default;
-$btn-white-space: null !default; // Set to `nowrap` to prevent text wrapping
-$btn-border-width: $border-width !default;
 $btn-disabled-opacity: 0.65 !default;
+$btn-border-radius: $border-radius !default; // Allows for customizing button radius independently from global border radius
 
-// Allows for customizing button radius independently from global border radius
-$btn-border-radius: $border-radius !default;
-
-// auto-complete variables
+/* ========== AUTO COMPLETE ========== */
+// Used in lookup fields, multi select picklists, etc.
 $autocomplete-border-color: $border-color !default;
 $autocomplete-box-shadow: $box-shadow !default;
 $autocomplete-background-color: $body-bg !default;
-$autocomplete-option-background-color: theme-color("primary") !default;
+$autocomplete-option-color: color-yiq(darken(theme-color("primary"), 7.5%)) !default;
+$autocomplete-option-background-color: darken(theme-color("primary"), 7.5%) !default;
+$autocomplete-option-user-image-background: $gray-600;
+$autocomplete-active-user-image-background: transparent !default;
 
-// Tabs
+/* ========== TAB ========== */
 $tab-header-border-width: 0 0 $border-width 0 !default; // top right bottom left
 $tab-header-border-color: transparent transparent $border-color transparent !default;
-
-$tab-header-tab-foucsed-background-color: rgba(theme-color("secondary"), 0.05) !default;
-$tab-header-tab-foucsed-color: $body-color !default;
-$tab-header-tab-active-link-bar-color: theme-color("secondary") !default;
-
+$tab-header-tab-focused-background-color: transparent !default;
+$tab-header-tab-focused-color: theme-color("primary") !default;
+$tab-header-tab-active-link-bar-color: theme-color("primary") !default;
 $tab-content-border-width: 0 0 0 0 !default; // top right bottom left
 $tab-content-border-color: $border-color !default;
 $tab-content-padding: 0 0 0 0 !default; // top right bottom left
 
-// Datepicker
+/* ========== DATE PICKER ========== */
 $datepicker-background-color: $body-bg !default;
 $datepicker-border-width: $border-width !default;
 $datepicker-border-color: $border-color !default;
@@ -214,76 +213,95 @@ $datepicker-table-header-font-weight: $font-weight-normal !default;
 $datepicker-date-focus-background-color: theme-color("dark") !default;
 $datepicker-date-selected-background-color: theme-color("primary") !default;
 
-//Records view
+/* ========== ELEMENT SPECIFIC ========== */
+
+/* ========== ACE-RECORD-TABLE-VIEW ========== */
 $records-view-profilePic-border-radius: 50% !default;
 $records-view-actionMenu-btn-border-radius: 50% !default;
-$records-view-casenumber-color: theme-color("primary") !default;
-$records-view-loadmore-color: theme-color("primary") !default;
 $records-view-loadmore-background-color: $body-bg !default;
-$records-view-loadmore-border-width: $border-width !default;
-$records-view-loadmore-border-color: $border-color !default;
-$records-view-pagination-background-color: $body-bg !default;
-$records-view-pagination-border-width: $border-width !default;
-$records-view-pagination-border-color: $border-color !default;
-$records-view-pagination-btn-border-radius: 50% !default;
 
-// Record task
-$record-task-header-background-color: transparent !default;
+/* ========== ACE-RECORD-TASK-VIEW ========== */
 $record-task-header-btn-border-radius: 50% !default;
-$record-task-body-background-color: theme-color("light") !default;
-$record-task-name-color: theme-color("primary") !default;
-$record-task-subheader-background-color: theme-color("light") !default;
 $record-task-header-font-size: $h2-font-size !default;
 $record-task-subheader-font-size: $h3-font-size !default;
 
-// Record process
-$record-process-header-background-color: transparent !default;
-$record-process-body-background-color: theme-color("light") !default;
-$record-process-name-color: theme-color("primary") !default;
+/* ========== ACE-RECORD-PROCESS ========== */
 $record-process-header-font-size: $h2-font-size !default;
 
-// Role switcher
-$role-switcher-background-color: theme-color("light") !default;
+/* ========== ACE-RECORD-ATTACHMENT ========== */
+
+$record-attachment-header-font-size: $h2-font-size !default;
+$record-attachment-button-background-color: transparent !default;
+$record-attachment-button-hover-color: color-yiq(lighten(theme-color("primary"), 7.5%)) !default;
+$record-attachment-button-hover-background-color: lighten(theme-color("primary"), 7.5%) !default;
+
+/* ========== ACE-ROLE-SWITCHER ========== */
+$role-switcher-list-background-color-focus: theme-color("light") !default;
 $role-switcher-list-border-focus: $border-width solid theme-color("primary") !default;
-$role-switcher-list-background-color-focus: transparent !default;
+$role-switcher-list-active-item-background-color: theme-color("primary") !default;
 
-// Record actions
-$record-action-background-color: theme-color("light") !default;
+/* ========== ACE-RECORD-ACTIONS ========== */
 $record-action-list-border-focus: $border-width solid theme-color("primary") !default;
-$record-action-list-background-color-focus: transparent !default;
+$record-action-list-background-color-focus: theme-color("light") !default;
 
-// object views list
-$views-list-background-color: theme-color("light") !default;
+/* ========== ACE-OBJECT-VIEWS-LIST ========== */
 $views-list-border-focus: $border-width solid theme-color("primary") !default;
-$views-list-background-color-focus: transparent !default;
+$views-list-background-color-focus: theme-color("light") !default;
 
-// Activity history
-$activity-history-date-style: theme-color("primary") !default;
-$activity-history-mat-divider: theme-color("primary") !default;
+/* ========== ACE-APP-TABS-LIST ========== */
+$app-tabs-list-background-color-focus: theme-color("light") !default;
+$app-tabs-list-border-focus: $border-width solid theme-color("primary") !default;
+$app-tabs-list-active-item-background-color: theme-color("primary") !default;
+
+/* ========== ACE-ACTIVITY-HISTORY ========== */
+$activity-history-date-color: theme-color("primary") !default;
+$activity-history-mat-divider-color: theme-color("primary") !default;
 $activity-history-icon-border-radius: 50% !default;
+$activity-history-time-line-color: theme-color("primary") !default;
+$activity-history-image-border-color: theme-color("primary") !default;
+$activity-history-image-box-shadow-color: theme-color("primary") !default;
 
-// Related information
+
+/* ========== ACE-RELATED-INFO ========== */
 $related-info-header-background: transparent !default;
 $related-info-header-text-color: inherit !default;
 
-//View Configuration
+/* ========== ACE-VIEW-CONFIG ========== */
 $filter-section-background: $gray-100 !default;
 $add-new-filter-button-color: $primary !default;
-$remove-filter-button-color: $primary !default; 
+$remove-filter-button-color: $primary !default;
 $view-config-background: transparent !default;
+$view-config-filter-toggle-button-checked-color: $primary !default;
+$view-config-filter-toggle-button-unchecked-color: $primary !default;
+$view-config-filter-line-color: $primary !default;
 
-// Mat-Chip variables
+/* ========== ACE-USER-PROFILE ========== */
+$user-profile-font-size: $font-size-base !default;
+$user-profile-font-weight: $font-weight-lighter !default;
+$user-profile-font-variant: small-caps !default;
+
+/* ========== COMMON ========== */
+
+/* ========== MENU ========== */
+$menu-border-color: $border-color !default;
+$menu-box-shadow: $box-shadow !default;
+$menu-background-color: $body-bg !default;
+$menu-hover-background-color: darken(theme-color("primary"), 7.5%) !default;
+$menu-hover-color: color-yiq($menu-hover-background-color) !default;
+
+/* ========== CHIPS ========== */
 $chip-background-color: theme-color("primary") !default;
 $chip-border-width: 0 0 0 0 !default;
 $chip-border-color: $border-color !default;
 $chip-border-radius: 16px !default;
+$chip-hover-focus-background-color: darken($chip-background-color, 7.5%);
+$chip-hover-focus-color: color-yiq(darken($chip-background-color, 7.5%));
 
-//dialog
+/* ========== DIALOGS ========== */
 $dialog-title-font-size: $h4-font-size !default;
 $dialog-title-line-height: $line-height-base !default;
 $dialog-title-close-button-color: $body-color !default;
 $dialog-title-close-button-color-focus: theme-color("primary") !default;
-
 $dialog-actions-border-width: $border-width !default;
 $dialog-actions-border-radius: $border-radius !default;
 $dialog-actions-primary-color: theme-color("primary") !default;
@@ -291,21 +309,22 @@ $dialog-actions-primary-color-hover: darken($dialog-actions-primary-color, 15%) 
 $dialog-actions-secondary-color: $dialog-actions-primary-color !default;
 $dialog-actions-cancel-color: theme-color("dark") !default;
 
-//divider
+/* ========== DIVIDER ========== */
 $divider-color: $border-color !default;
 
-//paginator
+/* ========== PAGINATOR ========== */
 $paginator-button-color: theme-color("primary") !default;
 $paginator-button-color-hover: darken(theme-color("primary"), 20%) !default;
 $paginator-button-disabled-opacity: $btn-disabled-opacity !default;
 
-//progressbar
+/* ========== PROGRESSBAR ========== */
 $progressbar-complete-color: theme-color("primary") !default;
 $progressbar-buffer-color: scale-color(theme-color("primary"), $lightness: 60%) !default;
 
-//tooltip
-
+/* ========== TOOLTIP ========== */
 $tooltip-background-color: theme-color("dark") !default;
+$tooltip-text-color: theme-color("light") !default;
 $tooltip-font-size: 80% !default;
 $tooltip-max-width: 100% !default;
 $tooltip-margin: 0 0 0 0 !default;
+

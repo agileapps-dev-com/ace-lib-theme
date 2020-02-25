@@ -5,13 +5,22 @@
 
     .mat-option {
         @include hover() {
-            color: color-yiq(darken($autocomplete-option-background-color, 7.5%));
-            background-color: darken($autocomplete-option-background-color, 7.5%);
+            color: $autocomplete-option-color;
+            background-color: $autocomplete-option-background-color;
+            .assign-image {
+                background: $autocomplete-active-user-image-background;
+            }
         }
 
         &.mat-active {
-            color: color-yiq(darken($autocomplete-option-background-color, 7.5%));
-            background-color: darken($autocomplete-option-background-color, 7.5%);
+            color: $autocomplete-option-color;
+            background-color: $autocomplete-option-background-color;
+            .assign-image {
+                background: $autocomplete-active-user-image-background;
+            }
+        }
+        .assign-image {
+            background: $autocomplete-option-user-image-background;
         }
     }
 }

@@ -1,0 +1,26 @@
+// typography
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700,700i,800&display=swap');
+
+$font-family-base: 'Open Sans', sans-serif;
+
+// theme-colors map
+
+$theme-colors: (
+  "primary": #607d8b,
+  "secondary": #2e7d32,
+  "error": #f44336,
+  "light": #f8f9fa,
+  "dark": #343a40
+);
+
+//table variables
+$table-head-bg: map-get($theme-colors, "primary");
+$table-head-color: map-get($theme-colors, "light");
+
+//checkbox, radio button, File, image colors
+$checkbox-color: map-get($theme-colors, "primary");
+$radio-color: map-get($theme-colors, "primary");
+$input-type-file-background-color: map-get($theme-colors, "primary");
+$input-type-image-background-color: map-get($theme-colors, "primary");
+
+@import "./../../scss/theme.scss";

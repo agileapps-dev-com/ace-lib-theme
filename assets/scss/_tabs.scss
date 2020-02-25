@@ -13,8 +13,8 @@ mat-tab-group {
           display: none;
         }
         &.cdk-focused {
-          background-color: $tab-header-tab-foucsed-background-color;
-          color: $tab-header-tab-foucsed-color;
+          // background-color: $tab-header-tab-focused-background-color;
+          color: $tab-header-tab-focused-color;
         }
       }
     }

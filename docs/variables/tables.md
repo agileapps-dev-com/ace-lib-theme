@@ -1,5 +1,5 @@
 ## Tables
-Below table variables are avilable for customizing.
+Below table variables are available for customizing.
 
 ### Variables
 
@@ -7,15 +7,15 @@ Below table variables are avilable for customizing.
 | -------------- |------------ |------------ |
 | $table-cell-padding    | 0.25rem | Tabel cell padding. |
 | $table-select-cell-width | 0 | Select column width. This is applicable only on the column with checkboxes. |
-| $table-color | $body-color | The text color inside the table. |
+| $table-color | #212529 | The text color inside the table. |
 | $table-bg| null | Background color for the table.|
-|$table-accent-bg| rgba($black, 0.05) | background color for the stripped rows. Applicable only on `.ace-table-striped` applied table.|
-|$table-hover-color| $table-color | Text color for the hovered row. Applicable only for `.ace-table-hover` applied tables. |
-|$table-hover-bg| rgba($black, 0.075) |Background color for the stripped rows. Applicable only for `.ace-table-hover` applied tables. |
-|$table-border-width| $border-width | Border width for the table cells. Applicable only for `.ace-table-bordered` applied table. |
-|$table-border-color| $border-color | Border color for the table. Applicable only for `.ace-table-bordered` applied table.   |
-|$table-head-bg| $gray-200 | Table header background color |
-|$table-head-color| $gray-700 | Table header text color |
+|$table-accent-bg| rgba(#000, 0.05) | background color for the stripped rows. Applicable only on `.ace-table-striped` applied table.|
+|$table-hover-color| #212529 | Text color for the hovered row. Applicable only for `.ace-table-hover` applied tables. |
+|$table-hover-bg| rgba(#000, 0.075) |Background color for the stripped rows. Applicable only for `.ace-table-hover` applied tables. |
+|$table-border-width| 1px | Border width for the table cells. Applicable only for `.ace-table-bordered` applied table. |
+|$table-border-color| #dee2e6 | Border color for the table. Applicable only for `.ace-table-bordered` applied table.   |
+|$table-head-bg| #e9ecef | Table header background color |
+|$table-head-color| #495057 | Table header text color |
 |$table-striped-order| odd | The row order selector config for `.ace-table-striped` applied table |
 
 Each of the above variable can be assigned with different values as below:

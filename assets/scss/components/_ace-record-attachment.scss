@@ -1,0 +1,17 @@
+ace-record-attachment {
+    .header-container {
+        
+        h2 {
+            font-size: $record-attachment-header-font-size;
+        }
+    }
+    .attachment-box {
+        .mat-list-item-content .mat-button {
+            background-color: $record-attachment-button-background-color;
+            @include hover-focus-active() {
+                color: $record-attachment-button-hover-color;
+                background-color: $record-attachment-button-hover-background-color;
+            }
+        }
+    }
+}

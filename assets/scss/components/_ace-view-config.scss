@@ -1,14 +1,14 @@
 ace-view-configuration {
     .custom-toggle .mat-button-toggle.mat-button-toggle-checked {
-        background: $primary;
-        color: color-yiq($primary);
+        background: $view-config-filter-toggle-button-checked-color;
+        color: color-yiq($view-config-filter-toggle-button-checked-color);
     }
     .custom-toggle .mat-button-toggle {
-        border: 1px solid $primary;
+        border: 1px solid $view-config-filter-toggle-button-unchecked-color;
         border-radius: 4px;
     }
     .wrapper .line {
-        background: $primary;
+        background: $view-config-filter-line-color;
     }
     .body-container .filter-section {
         background: $filter-section-background;

@@ -1,0 +1,36 @@
+// typography
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,600,700&display=swap');
+
+$font-family-base: 'Quicksand', sans-serif;
+
+// theme-colors map
+
+$theme-colors: (
+  "primary": #2d999f,
+  "secondary": #2d609f,
+  "error": #e62618,
+  "light": #f8f9fa,
+  "dark": #343a40
+);
+
+//table variables
+$table-head-bg: rgba(map-get($theme-colors, "primary"),.05);
+$table-head-color: map-get($theme-colors, "primary");
+$table-accent-bg: rgba(map-get($theme-colors, "primary"),.05);
+$table-hover-bg: rgba(map-get($theme-colors, "primary"),.05);
+$table-hover-color:map-get($theme-colors, "dark") ;
+$table-striped-order: even;
+
+//checkbox, radio button, File, image colors
+$checkbox-color: map-get($theme-colors, "primary");
+$radio-color: map-get($theme-colors, "primary");
+$input-type-file-background-color: map-get($theme-colors, "primary");
+$input-type-image-background-color: map-get($theme-colors, "primary");
+
+//tabs
+$tab-header-tab-foucsed-background-color: rgba(map-get($theme-colors, "primary"), 0.05);
+$tab-header-tab-foucsed-color:map-get($theme-colors, "dark") ;
+$tab-header-tab-active-link-bar-color: map-get($theme-colors, "primary");
+
+
+@import "./../../scss/theme.scss";
