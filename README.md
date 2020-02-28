@@ -1,8 +1,8 @@
 # ace-lib-theme
-ace-lib-theme is a Sass-powered style sheet theme builder utility for ace-lib components. It is used to create custom css themes for ace-lib components library.
+ace-lib-theme is a Sass-powered stylesheet theme builder utility for ace-lib components. Use this to create custom css themes for ace-lib components library.
 
 ## Install
-Use the below npm command to install
+Use the following npm command to install:
 
 ```shell
 npm i ace-lib-theme
