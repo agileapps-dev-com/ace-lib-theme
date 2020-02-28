@@ -1,16 +1,14 @@
 ## Radio Button
-Below radio button variables are avilable for customizing.
+Below radio button variables are available for customizing.
 
-### Variables
-
-| Variable                  | Default value | Description                                          |
-| ------------------------- |-------------- |------------------------------------------------------|
-| $radio-border-width       | 1px           | Defines the border thickness for radio button border.|
-| $radio-color              | #03dac6       | Defines the color property for the radio border.     |
+| Variable                                 | Default value | Description                                          |
+| ---------------------------------------- |-------------- |------------------------------------------------------|
+| $ace-lib-radio-button-border-width       | 1px           | Sets the border thickness for radio button.          |
+| $ace-lib-radio-button-color              | #03dac6       | Sets the color property for the radio button.        |
 
 Each of the above variable can be assigned with different values as below:
 ```scss
-$radio-border-width : 2px;
+$ace-lib-radio-button-border-width : 2px;
 
-$radio-color: #fff;
+$ace-lib-radio-button-color: #fff;
 ```

@@ -3,14 +3,14 @@ It is essential to apply the `.ace-btn` css class to all buttons which needs to 
 
 Below variables are available for buttons:
 
-| variable            | Default value  | Description                                                                                                   |
-| ------------------- |--------------- |-------------------------------------------------------------------------------------------------------------- |
-|$btn-padding         | 0.5rem 0.75rem | padding for the button. The value should be valid as per the css standards (`top right bottom left` pattern). |;
-|$btn-white-space     | null           |  White space definition for the button. Set to `nowrap` to prevent text wrapping |
-|$btn-line-height     | 1.5            | line-height property value|
-|$btn-border-width    | 1px            | Border width property for the button|
-|$btn-disabled-opacity| 0.65           | Opacity factor applied to the disabled button.|
-|$btn-border-radius   | 0              | Allows for customizing button radius independently from global border radius|
+| variable                    | Default value  | Description                                                                                                   |
+| --------------------------- |--------------- |-------------------------------------------------------------------------------------------------------------- |
+|$ace-lib-btn-padding         | 0.5rem 0.75rem | padding for the button. The value should be valid as per the css standards (`top right bottom left` pattern). |;
+|$ace-lib-btn-white-space     | null           |  White space definition for the button. Set to `nowrap` to prevent text wrapping |
+|$ace-lib-btn-line-height     | 1.5            | line-height property value|
+|$ace-lib-btn-border-width    | 1px            | Border width property for the button|
+|$ace-lib-btn-disabled-opacity| 0.65           | Opacity factor applied to the disabled button.|
+|$ace-lib-btn-border-radius   | 0              | Allows for customizing button radius independently from global border radius|
 
 > **Notes:** 
 * The button variant classes will be availble for only those elements which has the `.ace-btn` class attached.

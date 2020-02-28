@@ -23,7 +23,7 @@ Install the 'ace-lib-theme` from the npm package manager using the below command
     node-sass -c ~path\to\mytemplate\assets\theme\scss\ -o ~path\to\mytemplate\assets\theme\css\
     ```
     > **Tips:** 
-    > 1. If you have not installed the `node-sass` package globally, you will need to install it, before you use the below command. Use `npm i node-sass -g` to install it.
+    > 1. If you have not installed the `node-sass` package globally, you will need to install it, before you use the above command. Use `npm i node-sass -g` to install it.
     >2. If you get any compile error, review the path reference for the @import statement in step 4. It should be relative to the directory from which you execute the compile command.
 6. Import the generated `css` file into the template's `index.html` using the below HTML code.
 
