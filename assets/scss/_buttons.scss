@@ -1,13 +1,13 @@
 .ace-btn {
   display: inline-block;
-  white-space: $btn-white-space;
+  white-space: $ace-lib-btn-white-space;
   background-color: transparent;
   color: $body-color;
-  border: $btn-border-width solid transparent;
+  border: $ace-lib-btn-border-width solid transparent;
   vertical-align: middle;
-  padding: $btn-padding;
-  border-radius: $btn-border-radius;
-  line-height: $btn-line-height;
+  padding: $ace-lib-btn-padding;
+  border-radius: $ace-lib-btn-border-radius;
+  line-height: $ace-lib-btn-line-height;
   @include hover() {
     color: $body-color;
     text-decoration: none;
@@ -21,7 +21,7 @@
   // Disabled comes first so active can properly restyle
   &.disabled,
   &:disabled {
-    opacity: $btn-disabled-opacity;
+    opacity: $ace-lib-btn-disabled-opacity;
     // @include box-shadow(none);
   }
 
@@ -97,9 +97,9 @@
   }
 
   &.ace-reset-btn {
-    border-width: $btn-border-width;
+    border-width: $ace-lib-btn-border-width;
     border-style: solid;
     vertical-align: middle;
-    border-radius: $btn-border-radius;
+    border-radius: $ace-lib-btn-border-radius;
   }
 }

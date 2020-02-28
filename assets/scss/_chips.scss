@@ -1,14 +1,14 @@
 mat-chip-list {
     .mat-chip {
-        color: color-yiq($chip-background-color);
-        background-color: $chip-background-color;
-        border-radius: $chip-border-radius;
+        color: color-yiq($ace-lib-chip-background-color);
+        background-color: $ace-lib-chip-background-color;
+        border-radius: $ace-lib-chip-border-radius;
     
-        @include border-solid($chip-border-width, $chip-border-color);
+        @include border-solid($ace-lib-chip-border-width, $ace-lib-chip-border-color);
         
         @include hover-focus() {
-            color: $chip-hover-focus-color;
-            background-color: $chip-hover-focus-background-color;
+            color: $ace-lib-chip-hover-focus-color;
+            background-color: $ace-lib-chip-hover-focus-background-color;
         }
         &.mat-standard-chip .mat-chip-remove.mat-icon {
             font-size: 18px;

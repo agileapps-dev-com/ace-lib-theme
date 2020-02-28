@@ -1,9 +1,9 @@
 mat-tooltip-component {
   .mat-tooltip {
-    background-color: $tooltip-background-color;
-    font-size: $tooltip-font-size;
-    margin: $tooltip-margin;
-    max-width: $tooltip-max-width;
-    color: $tooltip-text-color;
+    background-color: $ace-lib-tooltip-background-color;
+    font-size: $ace-lib-tooltip-font-size;
+    margin: $ace-lib-tooltip-margin;
+    max-width: $ace-lib-tooltip-max-width;
+    color: $ace-lib-tooltip-text-color;
   }
 }

@@ -113,46 +113,47 @@ $text-muted: $gray-600 !default;
 
 /* ========== TABLE ========== */
 
-$table-cell-padding: 0.25rem !default;
-$table-select-cell-width: 0 !default; // flex-grow values;
-$table-color: $body-color !default;
-$table-bg: null !default;
-$table-accent-bg: rgba($black, 0.05) !default;
-$table-hover-color: $table-color !default;
-$table-hover-bg: rgba($black, 0.075) !default;
-$table-active-bg: $table-hover-bg !default;
-$table-border-width: $border-width !default;
-$table-border-color: $border-color !default;
-$table-head-bg: $gray-200 !default;
-$table-head-color: $gray-700 !default;
-$table-striped-order: odd !default;
-$table-caption-color: $text-muted !default;
+$ace-lib-table-cell-padding: 0.25rem !default;
+$ace-lib-table-select-cell-width: 0 !default; // flex-grow values;
+$ace-lib-table-color: $body-color !default;
+$ace-lib-table-bg: null !default;
+$ace-lib-table-accent-bg: rgba($black, 0.05) !default;
+$ace-lib-table-hover-color: $ace-lib-table-color !default;
+$ace-lib-table-hover-bg: rgba($black, 0.075) !default;
+$ace-lib-table-active-bg: $ace-lib-table-hover-bg !default; // does not use anywhere.
+$ace-lib-table-border-width: $border-width !default;
+$ace-lib-table-border-color: $border-color !default;
+$ace-lib-table-head-bg: $gray-200 !default;
+$ace-lib-table-head-color: $gray-700 !default;
+$ace-lib-table-striped-order: odd !default;
+$ace-lib-table-caption-color: $text-muted !default; // does not use anywhere.
 
 /* ========== FORM INPUTS ========== */
-$input-label-font-weight: $font-weight-normal !default;
+$ace-lib-input-label-font-weight: $font-weight-normal !default;
 
 // Input fields, like text, textarea, select
-$input-field-border-width: $border-width !default;
-$input-field-border-color: $border-color !default;
-$input-field-background-color: theme-color("light") !default;
-$input-field-text-color: $body-color !default;
-$input-field-disabled-background-color: darken(theme-color("light"), 5%) !default;
-$input-field-background-color-focus: $input-field-background-color !default;
-$input-field-border-color-focus: theme-color("primary") !default;
-$input-field-border-radius: $border-radius !default;
+$ace-lib-input-field-border-width: $border-width !default;
+$ace-lib-input-field-border-color: $border-color !default;
+$ace-lib-input-field-background-color: theme-color("light") !default;
+$ace-lib-input-field-text-color: $body-color !default;
+$ace-lib-input-field-disabled-background-color: darken(theme-color("light"), 5%) !default;
+$ace-lib-input-field-background-color-focus: $ace-lib-input-field-background-color !default;
+$ace-lib-input-field-border-color-focus: theme-color("primary") !default;
+$ace-lib-input-field-border-radius: $border-radius !default;
+$ace-lib-input-field-placeholder-color: theme-color("primary") !default;
 
 // Checkbox
-$checkbox-border-width: $border-width !default;
-$checkbox-color: theme-color("secondary") !default;
+$ace-lib-checkbox-border-width: $border-width !default;
+$ace-lib-checkbox-color: theme-color("secondary") !default;
 
 // Radio button
-$radio-border-width: $border-width !default;
-$radio-color: theme-color("secondary") !default;
+$ace-lib-radio-button-border-width: $border-width !default;
+$ace-lib-radio-button-color: theme-color("secondary") !default;
 
 // input field errors
-$input-field-error-border-color: theme-color("error") !default;
-$input-field-error-text-color: theme-color("error") !default;
-$input-field-error-font-size: 85% !default;
+$ace-lib-input-field-error-border-color: theme-color("error") !default;
+$ace-lib-input-field-error-text-color: theme-color("error") !default;
+$ace-lib-input-field-error-font-size: 85% !default;
 
 // Specific field types
 
@@ -161,6 +162,7 @@ $input-type-email-display-send-mail-button: false !default;
 //lookup field
 $input-type-lookup-display-open-record-button: false !default;
 $input-type-lookup-display-search-record-button: true !default;
+$input-type-lookup-display-search-record-button-color: $gray-600 !default;
 //file field
 $input-type-file-background-color: theme-color("secondary") !default;
 $input-type-file-border-color: $input-type-file-background-color !default;
@@ -173,158 +175,164 @@ $input-type-image-border-width: $border-width !default;
 $input-type-image-border-radius: 50% !default;
 
 //button variables
-$btn-padding: 0.5rem 0.75rem !default;
-$btn-white-space: null !default; //  Set to `nowrap` to prevent text wrapping
-$btn-line-height: $line-height-base !default;
-$btn-border-width: $border-width !default;
-$btn-disabled-opacity: 0.65 !default;
-$btn-border-radius: $border-radius !default; // Allows for customizing button radius independently from global border radius
+$ace-lib-btn-padding: 0.5rem 0.75rem !default;
+$ace-lib-btn-white-space: null !default; //  Set to `nowrap` to prevent text wrapping
+$ace-lib-btn-line-height: $line-height-base !default;
+$ace-lib-btn-border-width: $border-width !default;
+$ace-lib-btn-disabled-opacity: 0.65 !default;
+$ace-lib-btn-border-radius: $border-radius !default; // Allows for customizing button radius independently from global border radius
 
 /* ========== AUTO COMPLETE ========== */
 // Used in lookup fields, multi select picklists, etc.
-$autocomplete-border-color: $border-color !default;
-$autocomplete-box-shadow: $box-shadow !default;
-$autocomplete-background-color: $body-bg !default;
-$autocomplete-option-color: color-yiq(darken(theme-color("primary"), 7.5%)) !default;
-$autocomplete-option-background-color: darken(theme-color("primary"), 7.5%) !default;
-$autocomplete-option-user-image-background: $gray-600;
-$autocomplete-active-user-image-background: transparent !default;
+$ace-lib-autocomplete-border-color: $border-color !default;
+$ace-lib-autocomplete-box-shadow: $box-shadow !default;
+$ace-lib-autocomplete-background-color: $body-bg !default;
+$ace-lib-autocomplete-option-color: color-yiq(darken(theme-color("primary"), 7.5%)) !default;
+$ace-lib-autocomplete-option-background-color: darken(theme-color("primary"), 7.5%) !default;
+$ace-lib-autocomplete-option-user-image-background: $gray-600;
+$ace-lib-autocomplete-active-user-image-background: transparent !default;
 
 /* ========== TAB ========== */
-$tab-header-border-width: 0 0 $border-width 0 !default; // top right bottom left
-$tab-header-border-color: transparent transparent $border-color transparent !default;
-$tab-header-tab-focused-background-color: transparent !default;
-$tab-header-tab-focused-color: theme-color("primary") !default;
-$tab-header-tab-active-link-bar-color: theme-color("primary") !default;
-$tab-content-border-width: 0 0 0 0 !default; // top right bottom left
-$tab-content-border-color: $border-color !default;
-$tab-content-padding: 0 0 0 0 !default; // top right bottom left
+$ace-lib-tablist-header-border-width: 0 0 $border-width 0 !default; // top right bottom left
+$ace-lib-tablist-header-border-color: transparent transparent $border-color transparent !default;
+$ace-lib-tablist-header-tab-focused-background-color: transparent !default; // does not used anywhere.
+$ace-lib-tablist-header-tab-focused-color: theme-color("primary") !default;
+$ace-lib-tablist-header-tab-active-link-bar-color: theme-color("primary") !default;
+$ace-lib-tablist-content-border-width: 0 0 0 0 !default; // top right bottom left
+$ace-lib-tablist-content-border-color: $border-color !default;
+$ace-lib-tablist-content-padding: 0 0 0 0 !default; // top right bottom left
 
 /* ========== DATE PICKER ========== */
-$datepicker-background-color: $body-bg !default;
-$datepicker-border-width: $border-width !default;
-$datepicker-border-color: $border-color !default;
-$datepicker-control-btn-background-color: $body-bg !default;
-$datepicker-btn-outline-style: $btn-border-width auto theme-color("primary") !default;
-$datepicker-control-btn-border-radius: $border-radius !default;
-$datepicker-table-cell-radius: $border-radius !default;
-$datepicker-table-header-color: $body-color !default;
-$datepicker-table-header-font-weight: $font-weight-normal !default;
-$datepicker-date-focus-background-color: theme-color("dark") !default;
-$datepicker-date-selected-background-color: theme-color("primary") !default;
+$ace-lib-datepicker-background-color: $body-bg !default;
+$ace-lib-datepicker-border-width: $border-width !default;
+$ace-lib-datepicker-border-color: $border-color !default;
+$ace-lib-datepicker-control-btn-background-color: $body-bg !default;
+$ace-lib-datepicker-btn-outline-style: $ace-lib-btn-border-width auto theme-color("primary") !default;
+$ace-lib-datepicker-control-btn-border-radius: $border-radius !default;
+$ace-lib-datepicker-table-cell-radius: $border-radius !default;
+$ace-lib-datepicker-table-header-color: $body-color !default;
+$ace-lib-datepicker-table-header-font-weight: $font-weight-normal !default;
+$ace-lib-datepicker-date-focus-background-color: theme-color("dark") !default;
+$ace-lib-datepicker-date-selected-background-color: theme-color("primary") !default;
+
+/* ========== ACCORDION ========== */
+$ace-lib-accordion-border-on-focus: $border-width solid theme-color("primary") !default;
+$ace-lib-accordion-header-background-color: transparent !default;
+$ace-lib-accordion-header-background-on-expansion: transparent !default;
 
 /* ========== ELEMENT SPECIFIC ========== */
 
 /* ========== ACE-RECORD-TABLE-VIEW ========== */
-$records-view-profilePic-border-radius: 50% !default;
-$records-view-actionMenu-btn-border-radius: 50% !default;
-$records-view-loadmore-background-color: $body-bg !default;
+$ace-record-table-view-profilePic-border-radius: 50% !default;
+$ace-record-table-view-actionMenu-btn-border-radius: 50% !default;
+$ace-record-table-view-loadmore-background-color: $body-bg !default;
+$ace-record-table-view-actionMenu-btn-background-color: transparent !default;
+$ace-record-table-view-actionMenu-btn-color: $body-color !default;
 
 /* ========== ACE-RECORD-TASK-VIEW ========== */
-$record-task-header-btn-border-radius: 50% !default;
-$record-task-header-font-size: $h2-font-size !default;
-$record-task-subheader-font-size: $h3-font-size !default;
+$ace-record-task-view-header-btn-border-radius: 50% !default;
+$ace-record-task-view-header-font-size: $h2-font-size !default;
+$ace-record-task-view-subheader-font-size: $h3-font-size !default;
 
 /* ========== ACE-RECORD-PROCESS ========== */
-$record-process-header-font-size: $h2-font-size !default;
+$ace-record-process-header-font-size: $h2-font-size !default;
 
 /* ========== ACE-RECORD-ATTACHMENT ========== */
-
-$record-attachment-header-font-size: $h2-font-size !default;
-$record-attachment-button-background-color: transparent !default;
-$record-attachment-button-hover-color: color-yiq(lighten(theme-color("primary"), 7.5%)) !default;
-$record-attachment-button-hover-background-color: lighten(theme-color("primary"), 7.5%) !default;
+$ace-record-attachment-item-color: $body-color !default;
+$ace-record-attachment-item-delete-btn-color: theme-color("primary") !default;
+$ace-record-attachment-header-font-size: $h2-font-size !default;
+$ace-record-attachment-item-background-color: transparent !default;
+$ace-record-attachment-item-hover-color: color-yiq(lighten(theme-color("primary"), 7.5%)) !default;
+$ace-record-attachment-item-hover-background-color: lighten(theme-color("primary"), 7.5%) !default;
 
 /* ========== ACE-ROLE-SWITCHER ========== */
-$role-switcher-list-background-color-focus: theme-color("light") !default;
-$role-switcher-list-border-focus: $border-width solid theme-color("primary") !default;
-$role-switcher-list-active-item-background-color: theme-color("primary") !default;
+$ace-role-switcher-list-background-color-focus: theme-color("light") !default;
+$ace-role-switcher-list-border-focus: $border-width solid theme-color("primary") !default;
+$ace-role-switcher-list-active-item-background-color: theme-color("primary") !default;
 
 /* ========== ACE-RECORD-ACTIONS ========== */
-$record-action-list-border-focus: $border-width solid theme-color("primary") !default;
-$record-action-list-background-color-focus: theme-color("light") !default;
+$ace-record-action-list-border-focus: $border-width solid theme-color("primary") !default;
+$ace-record-action-list-background-color-focus: theme-color("light") !default;
 
 /* ========== ACE-OBJECT-VIEWS-LIST ========== */
-$views-list-border-focus: $border-width solid theme-color("primary") !default;
-$views-list-background-color-focus: theme-color("light") !default;
+$ace-object-views-list-border-focus: $border-width solid theme-color("primary") !default;
+$ace-object-views-list-background-color-focus: theme-color("light") !default;
 
 /* ========== ACE-APP-TABS-LIST ========== */
-$app-tabs-list-background-color-focus: theme-color("light") !default;
-$app-tabs-list-border-focus: $border-width solid theme-color("primary") !default;
-$app-tabs-list-active-item-background-color: theme-color("primary") !default;
+$ace-app-tabs-list-background-color-focus: theme-color("light") !default;
+$ace-app-tabs-list-border-focus: $border-width solid theme-color("primary") !default;
+$ace-app-tabs-list-active-item-background-color: theme-color("primary") !default;
 
 /* ========== ACE-ACTIVITY-HISTORY ========== */
-$activity-history-date-color: theme-color("primary") !default;
-$activity-history-mat-divider-color: theme-color("primary") !default;
-$activity-history-icon-border-radius: 50% !default;
-$activity-history-time-line-color: theme-color("primary") !default;
-$activity-history-image-border-color: theme-color("primary") !default;
-$activity-history-image-box-shadow-color: theme-color("primary") !default;
+$ace-activity-history-date-color: theme-color("primary") !default;
+$ace-activity-history-timeline-divider-color: theme-color("primary") !default;
+$ace-activity-history-icon-border-radius: 50% !default;
+$ace-activity-history-time-line-color: theme-color("primary") !default;
+$ace-activity-history-image-border-color: theme-color("primary") !default;
+$ace-activity-history-image-box-shadow-color: theme-color("primary") !default;
 
 
 /* ========== ACE-RELATED-INFO ========== */
-$related-info-header-background: transparent !default;
-$related-info-header-text-color: inherit !default;
+$ace-related-info-header-background: transparent !default;
+$ace-related-info-header-text-color: inherit !default;
 
 /* ========== ACE-VIEW-CONFIG ========== */
-$filter-section-background: $gray-100 !default;
-$add-new-filter-button-color: $primary !default;
-$remove-filter-button-color: $primary !default;
-$view-config-background: transparent !default;
-$view-config-filter-toggle-button-checked-color: $primary !default;
-$view-config-filter-toggle-button-unchecked-color: $primary !default;
-$view-config-filter-line-color: $primary !default;
+$ace-view-config-filter-section-background: transparent !default;
+$ace-view-config-add-new-filter-button-color: theme-color("primary") !default;
+$ace-view-config-remove-filter-button-color: theme-color("primary") !default;
+$ace-view-config-filter-toggle-button-background: theme-color("primary") !default;
 
 /* ========== ACE-USER-PROFILE ========== */
-$user-profile-font-size: $font-size-base !default;
-$user-profile-font-weight: $font-weight-lighter !default;
-$user-profile-font-variant: small-caps !default;
+$ace-user-profile-font-size: $font-size-base !default;
+$ace-user-profile-font-weight: $font-weight-lighter !default;
+$ace-user-profile-text-transform: uppercase !default;
 
 /* ========== COMMON ========== */
 
 /* ========== MENU ========== */
-$menu-border-color: $border-color !default;
-$menu-box-shadow: $box-shadow !default;
-$menu-background-color: $body-bg !default;
-$menu-hover-background-color: darken(theme-color("primary"), 7.5%) !default;
-$menu-hover-color: color-yiq($menu-hover-background-color) !default;
+$ace-lib-menu-border-color: $border-color !default;
+$ace-lib-menu-box-shadow: $box-shadow !default;
+$ace-lib-menu-background-color: $body-bg !default;
+$ace-lib-menu-color: $body-color !default;
+$ace-lib-menu-hover-background-color: darken(theme-color("primary"), 7.5%) !default;
+$ace-lib-menu-hover-color: color-yiq($ace-lib-menu-hover-background-color) !default;
 
 /* ========== CHIPS ========== */
-$chip-background-color: theme-color("primary") !default;
-$chip-border-width: 0 0 0 0 !default;
-$chip-border-color: $border-color !default;
-$chip-border-radius: 16px !default;
-$chip-hover-focus-background-color: darken($chip-background-color, 7.5%);
-$chip-hover-focus-color: color-yiq(darken($chip-background-color, 7.5%));
+$ace-lib-chip-background-color: theme-color("primary") !default;
+$ace-lib-chip-border-width: 0 0 0 0 !default;
+$ace-lib-chip-border-color: $border-color !default;
+$ace-lib-chip-border-radius: 16px !default;
+$ace-lib-chip-hover-focus-background-color: darken($ace-lib-chip-background-color, 7.5%);
+$ace-lib-chip-hover-focus-color: color-yiq(darken($ace-lib-chip-background-color, 7.5%));
 
 /* ========== DIALOGS ========== */
-$dialog-title-font-size: $h4-font-size !default;
-$dialog-title-line-height: $line-height-base !default;
-$dialog-title-close-button-color: $body-color !default;
-$dialog-title-close-button-color-focus: theme-color("primary") !default;
-$dialog-actions-border-width: $border-width !default;
-$dialog-actions-border-radius: $border-radius !default;
-$dialog-actions-primary-color: theme-color("primary") !default;
-$dialog-actions-primary-color-hover: darken($dialog-actions-primary-color, 15%) !default;
-$dialog-actions-secondary-color: $dialog-actions-primary-color !default;
-$dialog-actions-cancel-color: theme-color("dark") !default;
+$ace-lib-dialog-title-font-size: $h4-font-size !default;
+$ace-lib-dialog-title-line-height: $line-height-base !default;
+$ace-lib-dialog-title-close-button-color: $body-color !default;
+$ace-lib-dialog-title-close-button-color-focus: theme-color("primary") !default;
+$ace-lib-dialog-actions-border-width: $border-width !default;
+$ace-lib-dialog-actions-border-radius: $border-radius !default;
+$ace-lib-dialog-actions-primary-color: theme-color("primary") !default;
+$ace-lib-dialog-actions-primary-color-hover: darken($ace-lib-dialog-actions-primary-color, 15%) !default;
+$ace-lib-dialog-actions-secondary-color: $ace-lib-dialog-actions-primary-color !default;
+$ace-lib-dialog-actions-cancel-color: theme-color("dark") !default;
 
 /* ========== DIVIDER ========== */
-$divider-color: $border-color !default;
+$ace-lib-divider-color: $border-color !default;
 
 /* ========== PAGINATOR ========== */
-$paginator-button-color: theme-color("primary") !default;
-$paginator-button-color-hover: darken(theme-color("primary"), 20%) !default;
-$paginator-button-disabled-opacity: $btn-disabled-opacity !default;
+$ace-lib-paginator-button-color: theme-color("primary") !default;
+$ace-lib-paginator-button-color-hover: darken(theme-color("primary"), 20%) !default;
+$ace-lib-paginator-button-disabled-opacity: $ace-lib-btn-disabled-opacity !default;
 
 /* ========== PROGRESSBAR ========== */
-$progressbar-complete-color: theme-color("primary") !default;
-$progressbar-buffer-color: scale-color(theme-color("primary"), $lightness: 60%) !default;
+$ace-lib-progressbar-complete-color: theme-color("primary") !default;
+$ace-lib-progressbar-buffer-color: scale-color(theme-color("primary"), $lightness: 60%) !default;
 
 /* ========== TOOLTIP ========== */
-$tooltip-background-color: theme-color("dark") !default;
-$tooltip-text-color: theme-color("light") !default;
-$tooltip-font-size: 80% !default;
-$tooltip-max-width: 100% !default;
-$tooltip-margin: 0 0 0 0 !default;
+$ace-lib-tooltip-background-color: theme-color("dark") !default;
+$ace-lib-tooltip-text-color: theme-color("light") !default;
+$ace-lib-tooltip-font-size: 80% !default;
+$ace-lib-tooltip-max-width: 100% !default;
+$ace-lib-tooltip-margin: 0 0 0 0 !default;
 

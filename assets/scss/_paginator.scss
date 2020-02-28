@@ -3,14 +3,14 @@
     .mat-paginator-range-actions {
       button {
         &:not(:disabled):not(.disabled):enabled {
-          color: $paginator-button-color;
+          color: $ace-lib-paginator-button-color;
           @include hover-focus() {
-            color: $paginator-button-color-hover;
+            color: $ace-lib-paginator-button-color-hover;
           }
         }
         &.disabled,
         &:disabled {
-          opacity: $paginator-button-disabled-opacity;
+          opacity: $ace-lib-paginator-button-disabled-opacity;
         }
 
         &.mat-icon-button {

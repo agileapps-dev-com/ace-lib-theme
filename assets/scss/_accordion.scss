@@ -1,0 +1,17 @@
+.mat-accordion {
+    mat-expansion-panel {
+        .mat-expansion-panel-header {
+            padding: 0px 8px;
+            background: $ace-lib-accordion-header-background-color;
+        }
+        &:hover:not(.mat-expanded) {
+            border: $ace-lib-accordion-border-on-focus;
+        }
+        &:focus:not(.mat-expanded) {
+            border: $ace-lib-accordion-border-on-focus;
+        }
+        .mat-expanded {
+            background: $ace-lib-accordion-header-background-on-expansion;
+        }
+    }
+}

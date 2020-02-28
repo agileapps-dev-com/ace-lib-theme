@@ -1,26 +1,26 @@
 .mat-autocomplete-panel {
-    border: $autocomplete-border-color;
-    box-shadow: $autocomplete-box-shadow;
-    background-color: $autocomplete-background-color;
+    border: $ace-lib-autocomplete-border-color;
+    box-shadow: $ace-lib-autocomplete-box-shadow;
+    background-color: $ace-lib-autocomplete-background-color;
 
     .mat-option {
         @include hover() {
-            color: $autocomplete-option-color;
-            background-color: $autocomplete-option-background-color;
+            color: $ace-lib-autocomplete-option-color;
+            background-color: $ace-lib-autocomplete-option-background-color;
             .assign-image {
-                background: $autocomplete-active-user-image-background;
+                background: $ace-lib-autocomplete-active-user-image-background;
             }
         }
 
         &.mat-active {
-            color: $autocomplete-option-color;
-            background-color: $autocomplete-option-background-color;
+            color: $ace-lib-autocomplete-option-color;
+            background-color: $ace-lib-autocomplete-option-background-color;
             .assign-image {
-                background: $autocomplete-active-user-image-background;
+                background: $ace-lib-autocomplete-active-user-image-background;
             }
         }
         .assign-image {
-            background: $autocomplete-option-user-image-background;
+            background: $ace-lib-autocomplete-option-user-image-background;
         }
     }
 }

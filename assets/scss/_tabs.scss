@@ -1,11 +1,11 @@
 mat-tab-group {
   mat-tab-header {
-    border-width: $tab-header-border-width;
+    border-width: $ace-lib-tablist-header-border-width;
     border-style: solid;
-    border-color: $tab-header-border-color;
+    border-color: $ace-lib-tablist-header-border-color;
 
     .mat-ink-bar {
-      background-color: $tab-header-tab-active-link-bar-color;
+      background-color: $ace-lib-tablist-header-tab-active-link-bar-color;
     }
     .mat-tab-labels {
       .mat-tab-label {
@@ -14,15 +14,15 @@ mat-tab-group {
         }
         &.cdk-focused {
           // background-color: $tab-header-tab-focused-background-color;
-          color: $tab-header-tab-focused-color;
+          color: $ace-lib-tablist-header-tab-focused-color;
         }
       }
     }
   }
   mat-tab-body {
-    padding: $tab-content-padding;
-    border-width: $tab-content-border-width;
+    padding: $ace-lib-tablist-content-padding;
+    border-width: $ace-lib-tablist-content-border-width;
     border-style: solid;
-    border-color: $tab-content-border-color;
+    border-color: $ace-lib-tablist-content-border-color;
   }
 }

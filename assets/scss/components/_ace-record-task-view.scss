@@ -1,16 +1,16 @@
 ace-record-task-view {
     .header-container {
         h2 {
-            font-size: $record-task-header-font-size;
+            font-size: $ace-record-task-view-header-font-size;
         }
         button {
-            border-radius: $record-task-header-btn-border-radius;
+            border-radius: $ace-record-task-view-header-btn-border-radius;
         }
     }
     .sidePanel-componet-body {
         .mat-subheader {
             h3 {
-                font-size: $record-task-subheader-font-size;
+                font-size: $ace-record-task-view-subheader-font-size;
             }
         }
         .task-action-button {
@@ -18,5 +18,18 @@ ace-record-task-view {
                 margin-right: 4px;
             }
         }
+        aac-record-task-action {
+            .action-buttons {
+                button:not(:last-child) {
+                    margin-right: 4px;
+                }
+            }
+        }
+        .mat-list-base .mat-list-item.mat-3-line, .mat-list-base .mat-list-option.mat-3-line {
+            height: auto;
+        }
+    }
+    .action-buttons button {
+        margin-left: 4px;
     }
 }

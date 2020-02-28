@@ -3,11 +3,23 @@ ace-record-actions {
         .actions-list {
             li {
                 @include hover-focus() {
-                    border: $record-action-list-border-focus;
-                    background-color: $record-action-list-background-color-focus;
-                    color: color-yiq($record-action-list-background-color-focus);
+                    border: $ace-record-action-list-border-focus;
+                    background-color: $ace-record-action-list-background-color-focus;
+                    color: color-yiq($ace-record-action-list-background-color-focus);
                 }
             }
         }
+    }
+}
+
+aac-merge-dialog {
+    .mat-step-header .mat-step-icon.mat-step-icon-selected {
+        background-color: theme-color("primary");
+        color: color-yiq(theme-color("primary"));
+    }
+
+    .mat-step-header .mat-step-icon {
+        background-color: $ace-lib-table-head-bg;
+        color: color-yiq($ace-lib-table-head-bg);
     }
 }

@@ -1,14 +1,15 @@
 .mat-menu-panel {
-    border: $menu-border-color;
-    box-shadow: $menu-box-shadow;
-    background-color: $menu-background-color;
+    border: $ace-lib-menu-border-color;
+    box-shadow: $ace-lib-menu-box-shadow;
+    background-color: $ace-lib-menu-background-color;
 
     .mat-menu-content {
         .mat-menu-item {
             background: transparent;
+            color: $ace-lib-menu-color;
             @include hover-focus() {
-                color: $menu-hover-color;
-                background-color: $menu-hover-background-color;
+                color: $ace-lib-menu-hover-color;
+                background-color: $ace-lib-menu-hover-background-color;
             }
         }
     }

@@ -1,8 +1,8 @@
 .mat-dialog-container {
   .dialog-title-container {
     .mat-dialog-title {
-      line-height: $dialog-title-line-height;
-      font-size: $dialog-title-font-size;
+      line-height: $ace-lib-dialog-title-line-height;
+      font-size: $ace-lib-dialog-title-font-size;
     }
     button {
       &.mat-icon-button {
@@ -13,11 +13,11 @@
         }
       }
       &.dialog-close {
-        color: $dialog-title-close-button-color;
+        color: $ace-lib-dialog-title-close-button-color;
         background-color: transparent;
         border: 0;
         @include hover-focus() {
-          color: $dialog-title-close-button-color-focus;
+          color: $ace-lib-dialog-title-close-button-color-focus;
           outline: none;
         }
       }
@@ -29,42 +29,65 @@
   .dialog-actions-container,
   .mat-dialog-actions {
     .ace-btn {
-      border-width: $dialog-actions-border-width;
+      border-width: $ace-lib-dialog-actions-border-width;
       border-style: solid;
-      border-radius: $dialog-actions-border-radius;
+      border-radius: $ace-lib-dialog-actions-border-radius;
       &.ace-dialog-primary-action {
-        background-color: $dialog-actions-primary-color;
-        color: color-yiq($dialog-actions-primary-color);
-        border-color: $dialog-actions-primary-color;
+        background-color: $ace-lib-dialog-actions-primary-color;
+        color: color-yiq($ace-lib-dialog-actions-primary-color);
+        border-color: $ace-lib-dialog-actions-primary-color;
 
         @include hover-focus() {
-          background-color: $dialog-actions-primary-color-hover;
-          color: color-yiq($dialog-actions-primary-color-hover);
-          border-color: $dialog-actions-primary-color-hover;
+          background-color: $ace-lib-dialog-actions-primary-color-hover;
+          color: color-yiq($ace-lib-dialog-actions-primary-color-hover);
+          border-color: $ace-lib-dialog-actions-primary-color-hover;
         }
       }
       &.ace-dialog-secondary-action {
         background-color: transparent;
-        color: $dialog-actions-secondary-color;
-        border-color: $dialog-actions-secondary-color;
+        color: $ace-lib-dialog-actions-secondary-color;
+        border-color: $ace-lib-dialog-actions-secondary-color;
 
         @include hover-focus() {
-          background-color: $dialog-actions-secondary-color;
-          color: color-yiq($dialog-actions-secondary-color);
-          border-color: $dialog-actions-secondary-color;
+          background-color: $ace-lib-dialog-actions-secondary-color;
+          color: color-yiq($ace-lib-dialog-actions-secondary-color);
+          border-color: $ace-lib-dialog-actions-secondary-color;
         }
       }
       &.ace-dialog-cancel-action {
         background-color: transparent;
-        color: $dialog-actions-cancel-color;
-        border-color: $dialog-actions-cancel-color;
+        color: $ace-lib-dialog-actions-cancel-color;
+        border-color: $ace-lib-dialog-actions-cancel-color;
 
         @include hover-focus() {
-          background-color: $dialog-actions-cancel-color;
-          color: color-yiq($dialog-actions-cancel-color);
-          border-color: $dialog-actions-cancel-color;
+          background-color: $ace-lib-dialog-actions-cancel-color;
+          color: color-yiq($ace-lib-dialog-actions-cancel-color);
+          border-color: $ace-lib-dialog-actions-cancel-color;
         }
       }
+    }
+  }
+  
+  aac-record-task-create {
+    aac-record-task-multistep .task-form-row.taskForm-container {
+        background-color: transparent;
+    }
+  }
+
+  aac-file-uploader {
+    .mat-slide-toggle {
+      .mat-slide-toggle-bar {
+        background-color: $body-color;
+      }
+      .mat-slide-toggle-thumb {
+        background-color: theme-color("primary");
+      }
+    }
+    .image-container .mat-input-element {
+      background-color: transparent;
+      border: none;
+      width: 100%;
+      color: $body-color;
     }
   }
 }

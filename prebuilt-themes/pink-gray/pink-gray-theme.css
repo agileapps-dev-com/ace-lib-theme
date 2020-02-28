@@ -27,6 +27,7 @@
 /* ========== AUTO COMPLETE ========== */
 /* ========== TAB ========== */
 /* ========== DATE PICKER ========== */
+/* ========== ACCORDION ========== */
 /* ========== ELEMENT SPECIFIC ========== */
 /* ========== ACE-RECORD-TABLE-VIEW ========== */
 /* ========== ACE-RECORD-TASK-VIEW ========== */
@@ -48,7 +49,7 @@
 /* ========== PAGINATOR ========== */
 /* ========== PROGRESSBAR ========== */
 /* ========== TOOLTIP ========== */
-/* line 1, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/resets/_body.scss */
+/* line 1, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/resets/_body.scss */
 html body {
   margin: 0;
   font-family: "Roboto Slab", Serif;
@@ -58,66 +59,66 @@ html body {
   color: #212529;
   background-color: #fff; }
 
-/* line 2, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/resets/_links.scss */
+/* line 2, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/resets/_links.scss */
 html a {
   color: #df6589;
   text-decoration: none;
   background-color: transparent; }
-  /* line 13, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/mixins/_hover.scss */
+  /* line 13, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/mixins/_hover.scss */
   html a:hover {
     color: #cd2b5a;
     text-decoration: underline; }
 
-/* line 14, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/resets/_links.scss */
+/* line 14, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/resets/_links.scss */
 html a:not([href]) {
   color: inherit;
   text-decoration: none; }
-  /* line 13, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/mixins/_hover.scss */
+  /* line 13, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/mixins/_hover.scss */
   html a:not([href]):hover {
     color: inherit;
     text-decoration: none; }
 
-/* line 5, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/utilities/_colors.scss */
+/* line 5, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/utilities/_colors.scss */
 .ace-bg-primary {
   background-color: #df6589 !important; }
 
-/* line 5, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/utilities/_colors.scss */
+/* line 5, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/utilities/_colors.scss */
 .ace-bg-secondary {
   background-color: #565656 !important; }
 
-/* line 5, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/utilities/_colors.scss */
+/* line 5, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/utilities/_colors.scss */
 .ace-bg-error {
   background-color: #ce190c !important; }
 
-/* line 5, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/utilities/_colors.scss */
+/* line 5, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/utilities/_colors.scss */
 .ace-bg-light {
   background-color: #f8f9fa !important; }
 
-/* line 5, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/utilities/_colors.scss */
+/* line 5, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/utilities/_colors.scss */
 .ace-bg-dark {
   background-color: #343a40 !important; }
 
-/* line 12, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/utilities/_colors.scss */
+/* line 12, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/utilities/_colors.scss */
 .ace-text-primary {
   color: #df6589 !important; }
 
-/* line 12, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/utilities/_colors.scss */
+/* line 12, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/utilities/_colors.scss */
 .ace-text-secondary {
   color: #565656 !important; }
 
-/* line 12, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/utilities/_colors.scss */
+/* line 12, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/utilities/_colors.scss */
 .ace-text-error {
   color: #ce190c !important; }
 
-/* line 12, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/utilities/_colors.scss */
+/* line 12, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/utilities/_colors.scss */
 .ace-text-light {
   color: #f8f9fa !important; }
 
-/* line 12, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/utilities/_colors.scss */
+/* line 12, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/utilities/_colors.scss */
 .ace-text-dark {
   color: #343a40 !important; }
 
-/* line 1, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/utilities/_cdk.scss */
+/* line 1, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/utilities/_cdk.scss */
 .cdk-visually-hidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -130,7 +131,7 @@ html a:not([href]) {
   outline: 0;
   -webkit-appearance: none; }
 
-/* line 13, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/utilities/_cdk.scss */
+/* line 13, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/utilities/_cdk.scss */
 .mat-ripple {
   display: none; }
 
@@ -225,34 +226,34 @@ html a:not([href]) {
   background: white;
   color: rgba(0, 0, 0, 0.87); }
 
-/* line 2, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_tables.scss */
+/* line 2, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_tables.scss */
 mat-table.mat-table {
   width: 100%;
   margin-bottom: 1rem;
   color: #212529; }
-  /* line 8, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_tables.scss */
+  /* line 8, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_tables.scss */
   mat-table.mat-table .mat-header-cell,
   mat-table.mat-table .mat-cell {
     padding: 0.25rem;
     vertical-align: top;
-    border-top: 1px solid #f8f9fa; }
-    /* line 14, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_tables.scss */
+    border-top: 1px solid #dee2e6; }
+    /* line 14, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_tables.scss */
     mat-table.mat-table .mat-header-cell.ace-multi-select-column,
     mat-table.mat-table .mat-cell.ace-multi-select-column {
       flex-grow: 0;
       min-width: inherit;
       max-width: 120px; }
-  /* line 21, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_tables.scss */
+  /* line 21, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_tables.scss */
   mat-table.mat-table .mat-header-row .mat-header-cell {
     vertical-align: bottom;
-    border-bottom: 2px solid #f8f9fa;
-    color: #df6589;
-    background-color: #f8f9fa; }
-    /* line 27, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_tables.scss */
+    border-bottom: 2px solid #dee2e6;
+    color: #495057;
+    background-color: #e9ecef; }
+    /* line 27, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_tables.scss */
     mat-table.mat-table .mat-header-row .mat-header-cell:not(.select-box-list), mat-table.mat-table .mat-header-row .mat-header-cell:not(.profile-pic-column) {
       padding: 0.25rem;
       min-width: inherit; }
-  /* line 33, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_tables.scss */
+  /* line 33, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_tables.scss */
   mat-table.mat-table > .mat-footer-row,
   mat-table.mat-table > .mat-header-row,
   mat-table.mat-table > .mat-row {
@@ -261,145 +262,153 @@ mat-table.mat-table {
     padding: 0;
     margin: 0; }
 
-/* line 49, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_tables.scss */
+/* line 49, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_tables.scss */
 .ace-table-bordered .mat-table {
-  border: 1px solid #f8f9fa; }
-  /* line 52, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_tables.scss */
+  border: 1px solid #dee2e6; }
+  /* line 52, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_tables.scss */
   .ace-table-bordered .mat-table .mat-header-cell,
   .ace-table-bordered .mat-table .mat-cell {
-    border: 1px solid #f8f9fa; }
-  /* line 58, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_tables.scss */
+    border: 1px solid #dee2e6; }
+  /* line 58, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_tables.scss */
   .ace-table-bordered .mat-table .mat-header-row .mat-header-cell {
     border-bottom-width: 2px; }
 
-/* line 66, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_tables.scss */
+/* line 66, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_tables.scss */
 .ace-table-borderless .mat-table {
   border: 0; }
-  /* line 68, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_tables.scss */
+  /* line 68, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_tables.scss */
   .ace-table-borderless .mat-table .mat-header-cell,
   .ace-table-borderless .mat-table .mat-cell,
   .ace-table-borderless .mat-table .mat-header-row .mat-header-cell,
   .ace-table-borderless .mat-table .mat-row {
     border: 0; }
 
-/* line 83, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_tables.scss */
-.ace-table-striped .mat-table .mat-row:nth-of-type(even) {
+/* line 83, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_tables.scss */
+.ace-table-striped .mat-table .mat-row:nth-of-type(odd) {
   background-color: rgba(0, 0, 0, 0.05); }
 
-/* line 13, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/mixins/_hover.scss */
+/* line 13, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/mixins/_hover.scss */
 .ace-table-hover .mat-table .mat-row:hover {
   color: #212529;
   background-color: rgba(0, 0, 0, 0.075); }
 
-/* line 3, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_input-fields.scss */
+/* line 3, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_input-fields.scss */
 .form-group .label-container label {
   font-weight: 400; }
 
-/* line 9, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_input-fields.scss */
+/* line 9, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_input-fields.scss */
 .form-control.ace-field-input, .form-control.ace-field-textarea, .form-control.ace-field-select {
   border-radius: 0;
   border: 1px solid #dee2e6; }
-  /* line 15, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_input-fields.scss */
+  /* line 15, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_input-fields.scss */
   .form-control.ace-field-input:enabled, .form-control.ace-field-textarea:enabled, .form-control.ace-field-select:enabled {
     background-color: #f8f9fa;
     color: #212529; }
-  /* line 19, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_input-fields.scss */
+  /* line 19, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_input-fields.scss */
   .form-control.ace-field-input:not(:enabled), .form-control.ace-field-input[readonly], .form-control.ace-field-textarea:not(:enabled), .form-control.ace-field-textarea[readonly], .form-control.ace-field-select:not(:enabled), .form-control.ace-field-select[readonly] {
     background-color: #e9ecef;
     color: #212529; }
-  /* line 25, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_input-fields.scss */
+  /* line 25, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_input-fields.scss */
   .form-control.ace-field-input:focus, .form-control.ace-field-textarea:focus, .form-control.ace-field-select:focus {
     border: 1px solid #df6589;
     box-shadow: none; }
 
-/* line 33, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_input-fields.scss */
+/* line 33, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_input-fields.scss */
 .input-group {
   border-radius: 0;
   border: 1px solid #dee2e6;
   background-color: #f8f9fa;
   overflow: hidden; }
-  /* line 39, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_input-fields.scss */
+  /* line 39, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_input-fields.scss */
   .input-group .form-control.ace-field-input, .input-group .form-control.ace-field-textarea, .input-group .form-control.ace-field-select {
     border-radius: 0;
     border: 0; }
-    /* line 44, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_input-fields.scss */
+    /* line 44, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_input-fields.scss */
     .input-group .form-control.ace-field-input:focus, .input-group .form-control.ace-field-textarea:focus, .input-group .form-control.ace-field-select:focus {
       border: 0;
       box-shadow: none; }
-  /* line 51, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_input-fields.scss */
+  /* line 51, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_input-fields.scss */
   .input-group .input-group-append .ace-btn {
     border: 0;
     border-radius: 0; }
-    /* line 54, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_input-fields.scss */
+    /* line 54, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_input-fields.scss */
     .input-group .input-group-append .ace-btn:focus, .input-group .input-group-append .ace-btn:active, .input-group .input-group-append .ace-btn:not(:disabled):not(.disabled):active, .input-group .input-group-append .ace-btn:hover {
       box-shadow: none;
       background-color: #df6589;
       color: #fff; }
-  /* line 67, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_input-fields.scss */
+  /* line 67, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_input-fields.scss */
   .input-group:focus-within {
     border: 1px solid #df6589;
     box-shadow: 0 0 1px 0px #df6589; }
 
-/* line 76, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_input-fields.scss */
+/* line 76, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_input-fields.scss */
 .form-group.has-error {
   color: #ce190c; }
-  /* line 78, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_input-fields.scss */
+  /* line 78, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_input-fields.scss */
   .form-group.has-error .form-control {
     border-color: #ce190c; }
-  /* line 81, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_input-fields.scss */
+  /* line 81, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_input-fields.scss */
   .form-group.has-error .input-group {
     border: 1px solid #ce190c;
     box-shadow: none; }
-  /* line 86, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_input-fields.scss */
+  /* line 86, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_input-fields.scss */
   .form-group.has-error .help-block .block-element {
     font-size: 85%; }
 
-/* line 92, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_input-fields.scss */
+/* line 92, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_input-fields.scss */
 .section-has-error {
   color: #ce190c; }
 
-/* line 100, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_input-fields.scss */
+/* line 100, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_input-fields.scss */
 aac-email-field .input-group-append {
   display: none; }
 
-/* line 122, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_input-fields.scss */
+/* line 122, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_input-fields.scss */
 aac-lookup-field .input-group .input-group-append .ace-field-link-btn {
   display: none; }
 
-/* line 133, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_input-fields.scss */
+/* line 127, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_input-fields.scss */
+aac-lookup-field .input-group .input-group-append .btn-outline-secondary {
+  color: #6c757d; }
+
+/* line 136, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_input-fields.scss */
 aac-file-field .ace-btn {
   background-color: #565656;
   color: #fff;
   border: 1px solid #565656;
   border-radius: 0; }
-  /* line 39, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/mixins/_hover.scss */
+  /* line 39, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/mixins/_hover.scss */
   aac-file-field .ace-btn:hover, aac-file-field .ace-btn:focus, aac-file-field .ace-btn:active, aac-file-field .ace-btn:not(:disabled):not(.disabled):active, aac-file-field .ace-btn:not(:disabled):not(.disabled):active:focus {
     color: #fff;
     background-color: #434343;
     border-color: #3d3d3d;
     box-shadow: none; }
-  /* line 146, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_input-fields.scss */
+  /* line 149, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_input-fields.scss */
   aac-file-field .ace-btn.imageField-btn {
     background-color: #565656;
     color: #fff;
     border: 1px solid #565656;
     border-radius: 50%; }
-    /* line 39, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/mixins/_hover.scss */
+    /* line 39, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/mixins/_hover.scss */
     aac-file-field .ace-btn.imageField-btn:hover, aac-file-field .ace-btn.imageField-btn:focus, aac-file-field .ace-btn.imageField-btn:active, aac-file-field .ace-btn.imageField-btn:not(:disabled):not(.disabled):active, aac-file-field .ace-btn.imageField-btn:not(:disabled):not(.disabled):active:focus {
       color: #fff;
       background-color: #434343;
       border-color: #3d3d3d;
       box-shadow: none; }
 
-/* line 164, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_input-fields.scss */
+/* line 167, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_input-fields.scss */
 aac-picklist-field .input-group input.mat-chip-input {
   background-color: transparent; }
 
-/* line 3, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_checkbox.scss */
+/* line 174, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_input-fields.scss */
+input.ace-field-input.form-control::placeholder {
+  color: #df6589; }
+
+/* line 3, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_checkbox.scss */
 .mat-checkbox .mat-checkbox-layout .mat-checkbox-frame {
   border: 1px solid #565656; }
 
-/* line 6, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_checkbox.scss */
+/* line 6, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_checkbox.scss */
 .mat-checkbox .mat-checkbox-layout .mat-checkbox-checkmark {
   top: 0;
   left: 0;
@@ -408,49 +417,49 @@ aac-picklist-field .input-group input.mat-chip-input {
   position: absolute;
   width: 100%;
   fill: #fff; }
-  /* line 14, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_checkbox.scss */
+  /* line 14, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_checkbox.scss */
   .mat-checkbox .mat-checkbox-layout .mat-checkbox-checkmark .mat-checkbox-checkmark-path {
     stroke: #fff; }
 
-/* line 18, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_checkbox.scss */
+/* line 18, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_checkbox.scss */
 .mat-checkbox .mat-checkbox-layout .mat-checkbox-mixedmark {
   background-color: #fff; }
-  /* line 20, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_checkbox.scss */
+  /* line 20, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_checkbox.scss */
   .mat-checkbox .mat-checkbox-layout .mat-checkbox-mixedmark .mat-checkbox-checkmark-path {
     stroke: #fff; }
 
-/* line 26, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_checkbox.scss */
+/* line 26, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_checkbox.scss */
 .mat-checkbox.mat-checkbox-checked .mat-checkbox-background {
   background-color: #565656; }
 
-/* line 29, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_checkbox.scss */
+/* line 29, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_checkbox.scss */
 .mat-checkbox.mat-checkbox-checked .mat-checkbox-checkmark {
   opacity: 1; }
 
-/* line 34, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_checkbox.scss */
+/* line 34, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_checkbox.scss */
 .mat-checkbox.mat-checkbox-indeterminate .mat-checkbox-background {
   background-color: #565656; }
 
-/* line 40, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_checkbox.scss */
+/* line 40, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_checkbox.scss */
 .mat-checkbox.cdk-focused.mat-checkbox-checked .mat-checkbox-background {
   background-color: #3c3c3c; }
 
-/* line 43, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_checkbox.scss */
+/* line 43, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_checkbox.scss */
 .mat-checkbox.cdk-focused .mat-checkbox-frame {
   border-color: #3c3c3c; }
 
-/* line 50, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_checkbox.scss */
+/* line 50, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_checkbox.scss */
 .aac-checkbox-label {
   position: relative;
   overflow: hidden;
   padding-left: 1.25rem;
   margin-bottom: 0;
   line-height: 1.5rem; }
-  /* line 57, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_checkbox.scss */
+  /* line 57, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_checkbox.scss */
   .aac-checkbox-label .ace-field-input {
     position: absolute;
     left: -2rem; }
-  /* line 62, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_checkbox.scss */
+  /* line 62, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_checkbox.scss */
   .aac-checkbox-label:before {
     position: absolute;
     content: "";
@@ -464,10 +473,10 @@ aac-picklist-field .input-group input.mat-chip-input {
     -webkit-transform: translateY(0.25rem);
     -ms-transform: translateY(0.25rem);
     transform: translateY(0.25rem); }
-  /* line 76, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_checkbox.scss */
+  /* line 76, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_checkbox.scss */
   .aac-checkbox-label.input-checked::before {
     background-color: #565656; }
-  /* line 79, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_checkbox.scss */
+  /* line 79, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_checkbox.scss */
   .aac-checkbox-label.input-checked:after {
     position: absolute;
     content: "";
@@ -480,42 +489,42 @@ aac-picklist-field .input-group input.mat-chip-input {
     transform: rotate(-45deg);
     left: 0.2rem;
     top: 0.55rem; }
-  /* line 93, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_checkbox.scss */
+  /* line 93, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_checkbox.scss */
   .aac-checkbox-label:focus-within:before {
     border-color: #3c3c3c; }
-  /* line 97, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_checkbox.scss */
+  /* line 97, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_checkbox.scss */
   .aac-checkbox-label:focus-within.input-checked:before {
     background-color: #3c3c3c; }
 
-/* line 5, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_radio-button.scss */
+/* line 5, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_radio-button.scss */
 .mat-radio-button .mat-radio-label .mat-radio-container .mat-radio-outer-circle {
   border-width: 1px;
   border-color: #565656; }
 
-/* line 9, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_radio-button.scss */
+/* line 9, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_radio-button.scss */
 .mat-radio-button .mat-radio-label .mat-radio-container .mat-radio-inner-circle {
   background-color: #565656; }
 
-/* line 18, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_radio-button.scss */
+/* line 18, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_radio-button.scss */
 .mat-radio-button.cdk-focused .mat-radio-label .mat-radio-container .mat-radio-outer-circle {
   border-color: #3c3c3c; }
 
-/* line 21, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_radio-button.scss */
+/* line 21, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_radio-button.scss */
 .mat-radio-button.cdk-focused .mat-radio-label .mat-radio-container .mat-radio-inner-circle {
   background-color: #3c3c3c; }
 
-/* line 31, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_radio-button.scss */
+/* line 31, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_radio-button.scss */
 .aac-radio-label {
   position: relative;
   overflow: hidden;
   padding-left: 1.25rem;
   margin-bottom: 0;
   line-height: 1.5rem; }
-  /* line 38, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_radio-button.scss */
+  /* line 38, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_radio-button.scss */
   .aac-radio-label .ace-field-input {
     position: absolute;
     left: -2rem; }
-  /* line 43, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_radio-button.scss */
+  /* line 43, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_radio-button.scss */
   .aac-radio-label:before {
     position: absolute;
     content: "";
@@ -529,7 +538,7 @@ aac-picklist-field .input-group input.mat-chip-input {
     -webkit-transform: translateY(0.25rem);
     -ms-transform: translateY(0.25rem);
     transform: translateY(0.25rem); }
-  /* line 57, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_radio-button.scss */
+  /* line 57, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_radio-button.scss */
   .aac-radio-label.input-checked:after {
     position: absolute;
     content: "";
@@ -543,14 +552,14 @@ aac-picklist-field .input-group input.mat-chip-input {
     -webkit-transform: translateY(0.25rem);
     -ms-transform: translateY(0.25rem);
     transform: translateY(0.25rem); }
-  /* line 72, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_radio-button.scss */
+  /* line 72, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_radio-button.scss */
   .aac-radio-label:focus-within:before {
     border-color: #3c3c3c; }
-  /* line 75, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_radio-button.scss */
+  /* line 75, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_radio-button.scss */
   .aac-radio-label:focus-within:after {
     background-color: #3c3c3c; }
 
-/* line 1, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_buttons.scss */
+/* line 1, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_buttons.scss */
 .ace-btn {
   display: inline-block;
   background-color: transparent;
@@ -560,294 +569,294 @@ aac-picklist-field .input-group input.mat-chip-input {
   padding: 0.5rem 0.75rem;
   border-radius: 0;
   line-height: 1.5; }
-  /* line 13, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/mixins/_hover.scss */
+  /* line 13, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/mixins/_hover.scss */
   .ace-btn:hover {
     color: #212529;
     text-decoration: none; }
-  /* line 15, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_buttons.scss */
+  /* line 15, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_buttons.scss */
   .ace-btn:focus, .ace-btn.focus {
     outline: 0; }
-  /* line 22, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_buttons.scss */
+  /* line 22, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_buttons.scss */
   .ace-btn.disabled, .ace-btn:disabled {
     opacity: 0.65; }
-  /* line 36, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_buttons.scss */
+  /* line 36, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_buttons.scss */
   .ace-btn .mat-button-ripple {
     display: none; }
-  /* line 42, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_buttons.scss */
+  /* line 42, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_buttons.scss */
   .ace-btn.ace-primary {
     color: #fff;
     background-color: #df6589;
     border-color: #df6589; }
-    /* line 17, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/mixins/_hover.scss */
+    /* line 17, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/mixins/_hover.scss */
     .ace-btn.ace-primary:hover, .ace-btn.ace-primary:focus {
       color: #fff;
       background-color: #d84571;
       border-color: #d63b69; }
-    /* line 52, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_buttons.scss */
+    /* line 52, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_buttons.scss */
     .ace-btn.ace-primary.disabled, .ace-btn.ace-primary:disabled {
       color: #fff;
       background-color: #df6589;
       border-color: #df6589; }
-    /* line 59, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_buttons.scss */
+    /* line 59, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_buttons.scss */
     .ace-btn.ace-primary:not(:disabled):not(.disabled):active, .ace-btn.ace-primary:not(:disabled):not(.disabled).active {
       color: #fff;
       background-color: #d63b69;
       border-color: #d43061; }
-  /* line 42, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_buttons.scss */
+  /* line 42, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_buttons.scss */
   .ace-btn.ace-secondary {
     color: #fff;
     background-color: #565656;
     border-color: #565656; }
-    /* line 17, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/mixins/_hover.scss */
+    /* line 17, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/mixins/_hover.scss */
     .ace-btn.ace-secondary:hover, .ace-btn.ace-secondary:focus {
       color: #fff;
       background-color: #434343;
       border-color: #3d3d3d; }
-    /* line 52, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_buttons.scss */
+    /* line 52, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_buttons.scss */
     .ace-btn.ace-secondary.disabled, .ace-btn.ace-secondary:disabled {
       color: #fff;
       background-color: #565656;
       border-color: #565656; }
-    /* line 59, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_buttons.scss */
+    /* line 59, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_buttons.scss */
     .ace-btn.ace-secondary:not(:disabled):not(.disabled):active, .ace-btn.ace-secondary:not(:disabled):not(.disabled).active {
       color: #fff;
       background-color: #3d3d3d;
       border-color: #363636; }
-  /* line 42, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_buttons.scss */
+  /* line 42, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_buttons.scss */
   .ace-btn.ace-error {
     color: #fff;
     background-color: #ce190c;
     border-color: #ce190c; }
-    /* line 17, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/mixins/_hover.scss */
+    /* line 17, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/mixins/_hover.scss */
     .ace-btn.ace-error:hover, .ace-btn.ace-error:focus {
       color: #fff;
       background-color: #aa150a;
       border-color: #9e1309; }
-    /* line 52, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_buttons.scss */
+    /* line 52, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_buttons.scss */
     .ace-btn.ace-error.disabled, .ace-btn.ace-error:disabled {
       color: #fff;
       background-color: #ce190c;
       border-color: #ce190c; }
-    /* line 59, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_buttons.scss */
+    /* line 59, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_buttons.scss */
     .ace-btn.ace-error:not(:disabled):not(.disabled):active, .ace-btn.ace-error:not(:disabled):not(.disabled).active {
       color: #fff;
       background-color: #9e1309;
       border-color: #921208; }
-  /* line 42, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_buttons.scss */
+  /* line 42, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_buttons.scss */
   .ace-btn.ace-light {
     color: #212529;
     background-color: #f8f9fa;
     border-color: #f8f9fa; }
-    /* line 17, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/mixins/_hover.scss */
+    /* line 17, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/mixins/_hover.scss */
     .ace-btn.ace-light:hover, .ace-btn.ace-light:focus {
       color: #212529;
       background-color: #e2e6ea;
       border-color: #dae0e5; }
-    /* line 52, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_buttons.scss */
+    /* line 52, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_buttons.scss */
     .ace-btn.ace-light.disabled, .ace-btn.ace-light:disabled {
       color: #212529;
       background-color: #f8f9fa;
       border-color: #f8f9fa; }
-    /* line 59, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_buttons.scss */
+    /* line 59, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_buttons.scss */
     .ace-btn.ace-light:not(:disabled):not(.disabled):active, .ace-btn.ace-light:not(:disabled):not(.disabled).active {
       color: #212529;
       background-color: #dae0e5;
       border-color: #d3d9df; }
-  /* line 42, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_buttons.scss */
+  /* line 42, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_buttons.scss */
   .ace-btn.ace-dark {
     color: #fff;
     background-color: #343a40;
     border-color: #343a40; }
-    /* line 17, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/mixins/_hover.scss */
+    /* line 17, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/mixins/_hover.scss */
     .ace-btn.ace-dark:hover, .ace-btn.ace-dark:focus {
       color: #fff;
       background-color: #23272b;
       border-color: #1d2124; }
-    /* line 52, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_buttons.scss */
+    /* line 52, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_buttons.scss */
     .ace-btn.ace-dark.disabled, .ace-btn.ace-dark:disabled {
       color: #fff;
       background-color: #343a40;
       border-color: #343a40; }
-    /* line 59, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_buttons.scss */
+    /* line 59, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_buttons.scss */
     .ace-btn.ace-dark:not(:disabled):not(.disabled):active, .ace-btn.ace-dark:not(:disabled):not(.disabled).active {
       color: #fff;
       background-color: #1d2124;
       border-color: #171a1d; }
-  /* line 70, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_buttons.scss */
+  /* line 70, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_buttons.scss */
   .ace-btn.ace-outline-primary {
     color: #df6589;
     background-color: transparent;
     border-color: #df6589; }
-    /* line 13, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/mixins/_hover.scss */
+    /* line 13, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/mixins/_hover.scss */
     .ace-btn.ace-outline-primary:hover {
       color: #fff;
       background-color: #df6589;
       border-color: #df6589; }
-    /* line 80, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_buttons.scss */
+    /* line 80, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_buttons.scss */
     .ace-btn.ace-outline-primary:focus, .ace-btn.ace-outline-primary.focus {
       box-shadow: 0 0 0 1px rgba(223, 101, 137, 0.5); }
-    /* line 84, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_buttons.scss */
+    /* line 84, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_buttons.scss */
     .ace-btn.ace-outline-primary.disabled, .ace-btn.ace-outline-primary:disabled {
       color: #df6589;
       background-color: transparent; }
-    /* line 90, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_buttons.scss */
+    /* line 90, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_buttons.scss */
     .ace-btn.ace-outline-primary:not(:disabled):not(.disabled):active, .ace-btn.ace-outline-primary:not(:disabled):not(.disabled).active {
       color: #fff;
       background-color: #df6589;
       border-color: #df6589; }
-  /* line 70, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_buttons.scss */
+  /* line 70, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_buttons.scss */
   .ace-btn.ace-outline-secondary {
     color: #565656;
     background-color: transparent;
     border-color: #565656; }
-    /* line 13, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/mixins/_hover.scss */
+    /* line 13, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/mixins/_hover.scss */
     .ace-btn.ace-outline-secondary:hover {
       color: #fff;
       background-color: #565656;
       border-color: #565656; }
-    /* line 80, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_buttons.scss */
+    /* line 80, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_buttons.scss */
     .ace-btn.ace-outline-secondary:focus, .ace-btn.ace-outline-secondary.focus {
       box-shadow: 0 0 0 1px rgba(86, 86, 86, 0.5); }
-    /* line 84, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_buttons.scss */
+    /* line 84, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_buttons.scss */
     .ace-btn.ace-outline-secondary.disabled, .ace-btn.ace-outline-secondary:disabled {
       color: #565656;
       background-color: transparent; }
-    /* line 90, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_buttons.scss */
+    /* line 90, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_buttons.scss */
     .ace-btn.ace-outline-secondary:not(:disabled):not(.disabled):active, .ace-btn.ace-outline-secondary:not(:disabled):not(.disabled).active {
       color: #fff;
       background-color: #565656;
       border-color: #565656; }
-  /* line 70, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_buttons.scss */
+  /* line 70, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_buttons.scss */
   .ace-btn.ace-outline-error {
     color: #ce190c;
     background-color: transparent;
     border-color: #ce190c; }
-    /* line 13, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/mixins/_hover.scss */
+    /* line 13, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/mixins/_hover.scss */
     .ace-btn.ace-outline-error:hover {
       color: #fff;
       background-color: #ce190c;
       border-color: #ce190c; }
-    /* line 80, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_buttons.scss */
+    /* line 80, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_buttons.scss */
     .ace-btn.ace-outline-error:focus, .ace-btn.ace-outline-error.focus {
       box-shadow: 0 0 0 1px rgba(206, 25, 12, 0.5); }
-    /* line 84, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_buttons.scss */
+    /* line 84, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_buttons.scss */
     .ace-btn.ace-outline-error.disabled, .ace-btn.ace-outline-error:disabled {
       color: #ce190c;
       background-color: transparent; }
-    /* line 90, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_buttons.scss */
+    /* line 90, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_buttons.scss */
     .ace-btn.ace-outline-error:not(:disabled):not(.disabled):active, .ace-btn.ace-outline-error:not(:disabled):not(.disabled).active {
       color: #fff;
       background-color: #ce190c;
       border-color: #ce190c; }
-  /* line 70, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_buttons.scss */
+  /* line 70, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_buttons.scss */
   .ace-btn.ace-outline-light {
     color: #f8f9fa;
     background-color: transparent;
     border-color: #f8f9fa; }
-    /* line 13, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/mixins/_hover.scss */
+    /* line 13, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/mixins/_hover.scss */
     .ace-btn.ace-outline-light:hover {
       color: #212529;
       background-color: #f8f9fa;
       border-color: #f8f9fa; }
-    /* line 80, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_buttons.scss */
+    /* line 80, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_buttons.scss */
     .ace-btn.ace-outline-light:focus, .ace-btn.ace-outline-light.focus {
       box-shadow: 0 0 0 1px rgba(248, 249, 250, 0.5); }
-    /* line 84, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_buttons.scss */
+    /* line 84, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_buttons.scss */
     .ace-btn.ace-outline-light.disabled, .ace-btn.ace-outline-light:disabled {
       color: #f8f9fa;
       background-color: transparent; }
-    /* line 90, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_buttons.scss */
+    /* line 90, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_buttons.scss */
     .ace-btn.ace-outline-light:not(:disabled):not(.disabled):active, .ace-btn.ace-outline-light:not(:disabled):not(.disabled).active {
       color: #212529;
       background-color: #f8f9fa;
       border-color: #f8f9fa; }
-  /* line 70, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_buttons.scss */
+  /* line 70, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_buttons.scss */
   .ace-btn.ace-outline-dark {
     color: #343a40;
     background-color: transparent;
     border-color: #343a40; }
-    /* line 13, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/mixins/_hover.scss */
+    /* line 13, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/mixins/_hover.scss */
     .ace-btn.ace-outline-dark:hover {
       color: #fff;
       background-color: #343a40;
       border-color: #343a40; }
-    /* line 80, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_buttons.scss */
+    /* line 80, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_buttons.scss */
     .ace-btn.ace-outline-dark:focus, .ace-btn.ace-outline-dark.focus {
       box-shadow: 0 0 0 1px rgba(52, 58, 64, 0.5); }
-    /* line 84, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_buttons.scss */
+    /* line 84, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_buttons.scss */
     .ace-btn.ace-outline-dark.disabled, .ace-btn.ace-outline-dark:disabled {
       color: #343a40;
       background-color: transparent; }
-    /* line 90, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_buttons.scss */
+    /* line 90, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_buttons.scss */
     .ace-btn.ace-outline-dark:not(:disabled):not(.disabled):active, .ace-btn.ace-outline-dark:not(:disabled):not(.disabled).active {
       color: #fff;
       background-color: #343a40;
       border-color: #343a40; }
-  /* line 99, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_buttons.scss */
+  /* line 99, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_buttons.scss */
   .ace-btn.ace-reset-btn {
     border-width: 1px;
     border-style: solid;
     vertical-align: middle;
     border-radius: 0; }
 
-/* line 2, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_tabs.scss */
+/* line 2, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_tabs.scss */
 mat-tab-group mat-tab-header {
   border-width: 0 0 1px 0;
   border-style: solid;
   border-color: transparent transparent #dee2e6 transparent; }
-  /* line 7, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_tabs.scss */
+  /* line 7, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_tabs.scss */
   mat-tab-group mat-tab-header .mat-ink-bar {
     background-color: #df6589; }
-  /* line 12, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_tabs.scss */
+  /* line 12, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_tabs.scss */
   mat-tab-group mat-tab-header .mat-tab-labels .mat-tab-label .mat-ripple-element {
     display: none; }
-  /* line 15, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_tabs.scss */
+  /* line 15, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_tabs.scss */
   mat-tab-group mat-tab-header .mat-tab-labels .mat-tab-label.cdk-focused {
     color: #df6589; }
 
-/* line 22, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_tabs.scss */
+/* line 22, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_tabs.scss */
 mat-tab-group mat-tab-body {
   padding: 0 0 0 0;
   border-width: 0 0 0 0;
   border-style: solid;
   border-color: #dee2e6; }
 
-/* line 1, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_date-picker.scss */
+/* line 1, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_date-picker.scss */
 .mat-datepicker-content {
   background-color: #fff;
   border-width: 1px;
   border-style: solid;
   border-color: #dee2e6; }
-  /* line 9, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_date-picker.scss */
+  /* line 9, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_date-picker.scss */
   .mat-datepicker-content .mat-calendar-header .mat-calendar-controls button {
     color: #212529;
     background-color: #fff; }
-    /* line 17, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/mixins/_hover.scss */
+    /* line 17, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/mixins/_hover.scss */
     .mat-datepicker-content .mat-calendar-header .mat-calendar-controls button:hover, .mat-datepicker-content .mat-calendar-header .mat-calendar-controls button:focus {
       outline: 1px auto #df6589; }
-  /* line 16, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_date-picker.scss */
+  /* line 16, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_date-picker.scss */
   .mat-datepicker-content .mat-calendar-header .mat-calendar-controls .mat-icon-button {
     border-radius: 0; }
-    /* line 18, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_date-picker.scss */
+    /* line 18, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_date-picker.scss */
     .mat-datepicker-content .mat-calendar-header .mat-calendar-controls .mat-icon-button .mat-button-ripple {
       display: none; }
-  /* line 26, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_date-picker.scss */
+  /* line 26, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_date-picker.scss */
   .mat-datepicker-content .mat-calendar-content .mat-calendar-table .mat-calendar-table-header th {
     color: #212529;
     font-weight: 400; }
-  /* line 30, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_date-picker.scss */
+  /* line 30, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_date-picker.scss */
   .mat-datepicker-content .mat-calendar-content .mat-calendar-table .mat-calendar-body-active {
     background-color: #343a40;
     color: #fff; }
-  /* line 34, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_date-picker.scss */
+  /* line 34, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_date-picker.scss */
   .mat-datepicker-content .mat-calendar-content .mat-calendar-table .mat-calendar-body-cell-content {
     border-radius: 0; }
-    /* line 36, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_date-picker.scss */
+    /* line 36, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_date-picker.scss */
     .mat-datepicker-content .mat-calendar-content .mat-calendar-table .mat-calendar-body-cell-content.mat-calendar-body-selected {
       background-color: #df6589;
       color: #fff; }
 
-/* line 2, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_chips.scss */
+/* line 2, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_chips.scss */
 mat-chip-list .mat-chip {
   color: #fff;
   background-color: #df6589;
@@ -855,105 +864,122 @@ mat-chip-list .mat-chip {
   border-width: 0 0 0 0;
   border-style: solid;
   border-color: #dee2e6; }
-  /* line 17, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/mixins/_hover.scss */
+  /* line 17, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/mixins/_hover.scss */
   mat-chip-list .mat-chip:hover, mat-chip-list .mat-chip:focus {
     color: #fff;
     background-color: #d84571; }
-  /* line 13, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_chips.scss */
+  /* line 13, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_chips.scss */
   mat-chip-list .mat-chip.mat-standard-chip .mat-chip-remove.mat-icon {
     font-size: 18px; }
-  /* line 16, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_chips.scss */
+  /* line 16, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_chips.scss */
   mat-chip-list .mat-chip .mat-ripple-element {
     display: none; }
 
-/* line 1, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_autocomplete.scss */
+/* line 1, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_autocomplete.scss */
 .mat-autocomplete-panel {
   border: #dee2e6;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   background-color: #fff; }
-  /* line 13, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/mixins/_hover.scss */
+  /* line 13, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/mixins/_hover.scss */
   .mat-autocomplete-panel .mat-option:hover {
     color: #fff;
     background-color: #d84571; }
-    /* line 10, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_autocomplete.scss */
+    /* line 10, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_autocomplete.scss */
     .mat-autocomplete-panel .mat-option:hover .assign-image {
       background: transparent; }
-  /* line 15, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_autocomplete.scss */
+  /* line 15, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_autocomplete.scss */
   .mat-autocomplete-panel .mat-option.mat-active {
     color: #fff;
     background-color: #d84571; }
-    /* line 18, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_autocomplete.scss */
+    /* line 18, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_autocomplete.scss */
     .mat-autocomplete-panel .mat-option.mat-active .assign-image {
       background: transparent; }
-  /* line 22, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_autocomplete.scss */
+  /* line 22, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_autocomplete.scss */
   .mat-autocomplete-panel .mat-option .assign-image {
     background: #6c757d; }
 
-/* line 3, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_dialog.scss */
+/* line 3, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_accordion.scss */
+.mat-accordion mat-expansion-panel .mat-expansion-panel-header {
+  padding: 0px 8px;
+  background: transparent; }
+
+/* line 7, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_accordion.scss */
+.mat-accordion mat-expansion-panel:hover:not(.mat-expanded) {
+  border: 1px solid #df6589; }
+
+/* line 10, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_accordion.scss */
+.mat-accordion mat-expansion-panel:focus:not(.mat-expanded) {
+  border: 1px solid #df6589; }
+
+/* line 13, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_accordion.scss */
+.mat-accordion mat-expansion-panel .mat-expanded {
+  background: transparent; }
+
+/* line 3, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_dialog.scss */
 .mat-dialog-container .dialog-title-container .mat-dialog-title {
   line-height: 1.5;
   font-size: 1.5rem; }
 
-/* line 8, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_dialog.scss */
+/* line 8, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_dialog.scss */
 .mat-dialog-container .dialog-title-container button.mat-icon-button {
   border-radius: 0; }
-  /* line 11, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_dialog.scss */
+  /* line 11, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_dialog.scss */
   .mat-dialog-container .dialog-title-container button.mat-icon-button .mat-button-ripple {
     display: none; }
 
-/* line 15, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_dialog.scss */
+/* line 15, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_dialog.scss */
 .mat-dialog-container .dialog-title-container button.dialog-close {
   color: #212529;
   background-color: transparent;
   border: 0; }
-  /* line 17, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/mixins/_hover.scss */
+  /* line 17, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/mixins/_hover.scss */
   .mat-dialog-container .dialog-title-container button.dialog-close:hover, .mat-dialog-container .dialog-title-container button.dialog-close:focus {
     color: #df6589;
     outline: none; }
 
-/* line 25, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_dialog.scss */
+/* line 25, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_dialog.scss */
 .mat-dialog-container .dialog-title-container .dialog-back-button {
   display: none; }
 
-/* line 31, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_dialog.scss */
+/* line 31, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_dialog.scss */
 .mat-dialog-container .dialog-actions-container .ace-btn,
 .mat-dialog-container .mat-dialog-actions .ace-btn {
   border-width: 1px;
   border-style: solid;
   border-radius: 0; }
-  /* line 35, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_dialog.scss */
+  /* line 35, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_dialog.scss */
   .mat-dialog-container .dialog-actions-container .ace-btn.ace-dialog-primary-action,
   .mat-dialog-container .mat-dialog-actions .ace-btn.ace-dialog-primary-action {
     background-color: #df6589;
     color: #fff;
     border-color: #df6589; }
-    /* line 17, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/mixins/_hover.scss */
+    /* line 17, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/mixins/_hover.scss */
     .mat-dialog-container .dialog-actions-container .ace-btn.ace-dialog-primary-action:hover, .mat-dialog-container .dialog-actions-container .ace-btn.ace-dialog-primary-action:focus,
     .mat-dialog-container .mat-dialog-actions .ace-btn.ace-dialog-primary-action:hover,
     .mat-dialog-container .mat-dialog-actions .ace-btn.ace-dialog-primary-action:focus {
       background-color: #cd2b5a;
       color: #fff;
       border-color: #cd2b5a; }
-  /* line 46, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_dialog.scss */
+  /* line 46, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_dialog.scss */
   .mat-dialog-container .dialog-actions-container .ace-btn.ace-dialog-secondary-action,
   .mat-dialog-container .mat-dialog-actions .ace-btn.ace-dialog-secondary-action {
     background-color: transparent;
     color: #df6589;
     border-color: #df6589; }
-    /* line 17, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/mixins/_hover.scss */
+    /* line 17, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/mixins/_hover.scss */
     .mat-dialog-container .dialog-actions-container .ace-btn.ace-dialog-secondary-action:hover, .mat-dialog-container .dialog-actions-container .ace-btn.ace-dialog-secondary-action:focus,
     .mat-dialog-container .mat-dialog-actions .ace-btn.ace-dialog-secondary-action:hover,
     .mat-dialog-container .mat-dialog-actions .ace-btn.ace-dialog-secondary-action:focus {
       background-color: #df6589;
       color: #fff;
       border-color: #df6589; }
-  /* line 57, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_dialog.scss */
+  /* line 57, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_dialog.scss */
   .mat-dialog-container .dialog-actions-container .ace-btn.ace-dialog-cancel-action,
   .mat-dialog-container .mat-dialog-actions .ace-btn.ace-dialog-cancel-action {
     background-color: transparent;
     color: #343a40;
     border-color: #343a40; }
-    /* line 17, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/mixins/_hover.scss */
+    /* line 17, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/mixins/_hover.scss */
     .mat-dialog-container .dialog-actions-container .ace-btn.ace-dialog-cancel-action:hover, .mat-dialog-container .dialog-actions-container .ace-btn.ace-dialog-cancel-action:focus,
     .mat-dialog-container .mat-dialog-actions .ace-btn.ace-dialog-cancel-action:hover,
     .mat-dialog-container .mat-dialog-actions .ace-btn.ace-dialog-cancel-action:focus {
@@ -961,43 +987,62 @@ mat-chip-list .mat-chip {
       color: #fff;
       border-color: #343a40; }
 
-/* line 2, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_divider.scss */
+/* line 72, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_dialog.scss */
+.mat-dialog-container aac-record-task-create aac-record-task-multistep .task-form-row.taskForm-container {
+  background-color: transparent; }
+
+/* line 79, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_dialog.scss */
+.mat-dialog-container aac-file-uploader .mat-slide-toggle .mat-slide-toggle-bar {
+  background-color: #212529; }
+
+/* line 82, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_dialog.scss */
+.mat-dialog-container aac-file-uploader .mat-slide-toggle .mat-slide-toggle-thumb {
+  background-color: #df6589; }
+
+/* line 86, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_dialog.scss */
+.mat-dialog-container aac-file-uploader .image-container .mat-input-element {
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  color: #212529; }
+
+/* line 2, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_divider.scss */
 mat-divider.mat-divider {
   border-color: #dee2e6; }
 
-/* line 5, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_paginator.scss */
+/* line 5, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_paginator.scss */
 .mat-paginator .mat-paginator-container .mat-paginator-range-actions button:not(:disabled):not(.disabled):enabled {
   color: #df6589; }
-  /* line 17, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/mixins/_hover.scss */
+  /* line 17, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/mixins/_hover.scss */
   .mat-paginator .mat-paginator-container .mat-paginator-range-actions button:not(:disabled):not(.disabled):enabled:hover, .mat-paginator .mat-paginator-container .mat-paginator-range-actions button:not(:disabled):not(.disabled):enabled:focus {
     color: #b82651; }
 
-/* line 11, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_paginator.scss */
+/* line 11, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_paginator.scss */
 .mat-paginator .mat-paginator-container .mat-paginator-range-actions button.disabled, .mat-paginator .mat-paginator-container .mat-paginator-range-actions button:disabled {
   opacity: 0.65; }
 
-/* line 16, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_paginator.scss */
+/* line 16, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_paginator.scss */
 .mat-paginator .mat-paginator-container .mat-paginator-range-actions button.mat-icon-button {
   border-radius: 0;
   background: transparent none; }
-  /* line 19, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_paginator.scss */
+  /* line 19, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_paginator.scss */
   .mat-paginator .mat-paginator-container .mat-paginator-range-actions button.mat-icon-button .mat-button-ripple {
     display: none; }
 
-/* line 1, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_progressbar.scss */
+/* line 1, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_progressbar.scss */
 .mat-progress-bar {
   margin: 5px auto; }
-  /* line 3, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_progressbar.scss */
+  /* line 3, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_progressbar.scss */
   .mat-progress-bar .mat-progress-bar-background {
     fill: #f2c1d0; }
-  /* line 6, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_progressbar.scss */
+  /* line 6, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_progressbar.scss */
   .mat-progress-bar .mat-progress-bar-buffer {
     background-color: #f2c1d0; }
-  /* line 10, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_progressbar.scss */
+  /* line 10, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_progressbar.scss */
   .mat-progress-bar .mat-progress-bar-fill::after {
     background-color: #df6589; }
 
-/* line 2, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_tooltip.scss */
+/* line 2, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_tooltip.scss */
 mat-tooltip-component .mat-tooltip {
   background-color: #343a40;
   font-size: 80%;
@@ -1005,170 +1050,223 @@ mat-tooltip-component .mat-tooltip {
   max-width: 100%;
   color: #f8f9fa; }
 
-/* line 1, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_matmenu.scss */
+/* line 1, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_matmenu.scss */
 .mat-menu-panel {
   border: #dee2e6;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   background-color: #fff; }
-  /* line 7, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_matmenu.scss */
+  /* line 7, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/_matmenu.scss */
   .mat-menu-panel .mat-menu-content .mat-menu-item {
-    background: transparent; }
-    /* line 17, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/mixins/_hover.scss */
+    background: transparent;
+    color: #212529; }
+    /* line 17, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/mixins/_hover.scss */
     .mat-menu-panel .mat-menu-content .mat-menu-item:hover, .mat-menu-panel .mat-menu-content .mat-menu-item:focus {
       color: #fff;
       background-color: #d84571; }
 
-/* line 3, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/components/_ace-record-table-view.scss */
+/* line 3, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/components/_ace-record-table-view.scss */
 ace-records-table-view .mat-table .profile-pic {
   border-radius: 50%; }
 
-/* line 6, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/components/_ace-record-table-view.scss */
+/* line 6, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/components/_ace-record-table-view.scss */
 ace-records-table-view .mat-table .mat-column-actionButton.action-column .mat-icon-button {
-  border-radius: 50%; }
+  border-radius: 50%;
+  background-color: transparent;
+  color: #212529; }
 
-/* line 10, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/components/_ace-record-table-view.scss */
+/* line 12, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/components/_ace-record-table-view.scss */
 ace-records-table-view .load-more-data {
   background-color: #fff; }
 
-/* line 2, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/components/_ace-activity-history.scss */
+/* line 2, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/components/_ace-activity-history.scss */
 aac-activity-history .date-style {
   color: #df6589; }
 
-/* line 6, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/components/_ace-activity-history.scss */
+/* line 6, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/components/_ace-activity-history.scss */
 aac-activity-history .time-line-container:before {
   border-right: 4px solid #df6589; }
 
-/* line 9, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/components/_ace-activity-history.scss */
+/* line 9, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/components/_ace-activity-history.scss */
 aac-activity-history .timeline-divider {
   border: 7px solid #df6589; }
 
-/* line 12, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/components/_ace-activity-history.scss */
+/* line 12, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/components/_ace-activity-history.scss */
 aac-activity-history .timeline-icon {
   border: 1px solid #df6589;
   width: 32px;
   height: 32px;
   border-radius: 50%; }
-  /* line 17, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/components/_ace-activity-history.scss */
+  /* line 17, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/components/_ace-activity-history.scss */
   aac-activity-history .timeline-icon .icon-elem {
     border-radius: 50%;
     margin-top: 3px; }
 
-/* line 22, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/components/_ace-activity-history.scss */
+/* line 22, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/components/_ace-activity-history.scss */
 aac-activity-history .timeline-image {
   box-shadow: 1px 1px 1px 0px #df6589; }
 
-/* line 3, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/components/_ace-record-task-view.scss */
+/* line 25, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/components/_ace-activity-history.scss */
+aac-activity-history .time-line-container .time-line-item .attachment-icon.mat-icon {
+  background: transparent; }
+
+/* line 3, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/components/_ace-record-task-view.scss */
 ace-record-task-view .header-container h2 {
   font-size: 2rem; }
 
-/* line 6, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/components/_ace-record-task-view.scss */
+/* line 6, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/components/_ace-record-task-view.scss */
 ace-record-task-view .header-container button {
   border-radius: 50%; }
 
-/* line 12, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/components/_ace-record-task-view.scss */
+/* line 12, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/components/_ace-record-task-view.scss */
 ace-record-task-view .sidePanel-componet-body .mat-subheader h3 {
   font-size: 1.75rem; }
 
-/* line 17, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/components/_ace-record-task-view.scss */
+/* line 17, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/components/_ace-record-task-view.scss */
 ace-record-task-view .sidePanel-componet-body .task-action-button button:not(:last-child) {
   margin-right: 4px; }
 
-/* line 3, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/components/_ace-record-process.scss */
+/* line 23, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/components/_ace-record-task-view.scss */
+ace-record-task-view .sidePanel-componet-body aac-record-task-action .action-buttons button:not(:last-child) {
+  margin-right: 4px; }
+
+/* line 28, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/components/_ace-record-task-view.scss */
+ace-record-task-view .sidePanel-componet-body .mat-list-base .mat-list-item.mat-3-line, ace-record-task-view .sidePanel-componet-body .mat-list-base .mat-list-option.mat-3-line {
+  height: auto; }
+
+/* line 32, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/components/_ace-record-task-view.scss */
+ace-record-task-view .action-buttons button {
+  margin-left: 4px; }
+
+/* line 3, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/components/_ace-record-process.scss */
 ace-record-process .header-container h2 {
   font-size: 2rem; }
 
-/* line 4, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/components/_ace-record-attachment.scss */
+/* line 4, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/components/_ace-record-attachment.scss */
 ace-record-attachment .header-container h2 {
   font-size: 2rem; }
 
-/* line 9, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/components/_ace-record-attachment.scss */
+/* line 10, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/components/_ace-record-attachment.scss */
 ace-record-attachment .attachment-box .mat-list-item-content .mat-button {
-  background-color: transparent; }
-  /* line 32, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/mixins/_hover.scss */
+  background-color: transparent;
+  color: #212529; }
+  /* line 32, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/mixins/_hover.scss */
   ace-record-attachment .attachment-box .mat-list-item-content .mat-button:hover, ace-record-attachment .attachment-box .mat-list-item-content .mat-button:focus, ace-record-attachment .attachment-box .mat-list-item-content .mat-button:active {
     color: #212529;
     background-color: #e685a1; }
 
-/* line 17, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/mixins/_hover.scss */
+/* line 18, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/components/_ace-record-attachment.scss */
+ace-record-attachment .attachment-box .mat-list-item-content .mat-icon-button {
+  background-color: transparent;
+  color: #df6589; }
+
+/* line 17, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/mixins/_hover.scss */
 ace-role-switcher div.ace-theme .ace-list-item button:hover, ace-role-switcher div.ace-theme .ace-list-item button:focus {
   outline: none;
   border: 1px solid #df6589;
   background-color: #f8f9fa;
   color: #212529; }
 
-/* line 13, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/components/_ace-role-switcher.scss */
+/* line 13, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/components/_ace-role-switcher.scss */
 ace-role-switcher div.ace-theme .ace-list-item.active-item {
   background-color: #df6589;
   color: #fff; }
 
-/* line 17, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/mixins/_hover.scss */
+/* line 17, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/mixins/_hover.scss */
 ace-object-views-list div.ace-theme .ace-list-item.view-Info:hover, ace-object-views-list div.ace-theme .ace-list-item.view-Info:focus {
   border: 1px solid #df6589;
   background-color: #f8f9fa;
   color: #212529; }
 
-/* line 17, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/mixins/_hover.scss */
+/* line 17, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/mixins/_hover.scss */
 ace-record-actions div.ace-theme .actions-list li:hover, ace-record-actions div.ace-theme .actions-list li:focus {
   border: 1px solid #df6589;
   background-color: #f8f9fa;
   color: #212529; }
 
-/* line 17, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/mixins/_hover.scss */
+/* line 16, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/components/_ace-record-actions.scss */
+aac-merge-dialog .mat-step-header .mat-step-icon.mat-step-icon-selected {
+  background-color: #df6589;
+  color: #fff; }
+
+/* line 21, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/components/_ace-record-actions.scss */
+aac-merge-dialog .mat-step-header .mat-step-icon {
+  background-color: #e9ecef;
+  color: #212529; }
+
+/* line 17, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/mixins/_hover.scss */
 ace-app-tabs-list ul.objects-container li a.item-info:hover, ace-app-tabs-list ul.objects-container li a.item-info:focus {
   border: 1px solid #df6589;
   background-color: #f8f9fa;
   color: #212529;
   outline: none; }
 
-/* line 12, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/components/_ace-app-tabs-list.scss */
+/* line 12, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/components/_ace-app-tabs-list.scss */
 ace-app-tabs-list ul.objects-container li a.item-info.active-item {
   background-color: #df6589;
   color: #fff; }
 
-/* line 3, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/components/_ace-related-info.scss */
+/* line 3, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/components/_ace-related-info.scss */
 ace-related-info .new-record-button .mat-paginator-outer-container {
   background: transparent;
   color: inherit; }
 
-/* line 2, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/components/_ace-view-config.scss */
+/* line 8, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/components/_ace-related-info.scss */
+ace-related-info .table-container mat-table.mat-table.table-border mat-header-row.mat-header-row .mat-header-cell.aac-table-item {
+  display: flex; }
+
+/* line 11, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/components/_ace-related-info.scss */
+ace-related-info .table-paginator.mat-paginator {
+  background-color: transparent; }
+
+/* line 2, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/components/_ace-view-config.scss */
 ace-view-configuration .custom-toggle .mat-button-toggle.mat-button-toggle-checked {
-  background: #6200ee;
+  background: #df6589;
   color: #fff; }
 
-/* line 6, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/components/_ace-view-config.scss */
+/* line 6, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/components/_ace-view-config.scss */
 ace-view-configuration .custom-toggle .mat-button-toggle {
-  border: 1px solid #6200ee;
-  border-radius: 4px; }
+  border: 1px solid #df6589;
+  border-radius: 0px; }
 
-/* line 10, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/components/_ace-view-config.scss */
+/* line 10, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/components/_ace-view-config.scss */
 ace-view-configuration .wrapper .line {
-  background: #6200ee; }
+  background: transparent; }
 
-/* line 13, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/components/_ace-view-config.scss */
+/* line 13, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/components/_ace-view-config.scss */
 ace-view-configuration .body-container .filter-section {
-  background: #f8f9fa; }
+  background: transparent; }
 
-/* line 16, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/components/_ace-view-config.scss */
+/* line 16, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/components/_ace-view-config.scss */
 ace-view-configuration .form-container .mat-icon-button {
-  color: #6200ee; }
+  color: #df6589;
+  background: transparent; }
 
-/* line 19, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/components/_ace-view-config.scss */
+/* line 20, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/components/_ace-view-config.scss */
 ace-view-configuration .date-filter-section .remove-button {
-  background: #6200ee;
+  background: #df6589;
   color: #fff; }
 
-/* line 23, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/components/_ace-view-config.scss */
+/* line 24, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/components/_ace-view-config.scss */
 ace-view-configuration .mat-dialog-content .mat-tab-body-wrapper {
   background: transparent; }
 
-/* line 3, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/components/_ace-user-profile.scss */
+/* line 27, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/components/_ace-view-config.scss */
+ace-view-configuration .available-field-list, ace-view-configuration .selected-field-list {
+  background: #f8f9fa;
+  color: #212529; }
+  /* line 30, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/components/_ace-view-config.scss */
+  ace-view-configuration .available-field-list:focus, ace-view-configuration .selected-field-list:focus {
+    border: 1px solid #df6589;
+    outline: none; }
+
+/* line 3, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/components/_ace-user-profile.scss */
 ace-user-profile .user-info-text-block .profile-name {
   font-size: 1rem;
   font-weight: lighter;
-  font-variant: small-caps; }
+  text-transform: uppercase; }
 
-/* line 6, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/components/_ace-user-profile.scss */
+/* line 6, projects/ace-lib/src/assets/themes/ace-lib-theme/assets/scss/components/_ace-user-profile.scss */
 ace-user-profile .user-info-text-block .user-role {
   font-size: 1rem;
   font-weight: lighter;
-  font-variant: small-caps; }
+  text-transform: uppercase; }

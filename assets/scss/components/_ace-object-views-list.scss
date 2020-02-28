@@ -2,9 +2,9 @@ ace-object-views-list {
     div.ace-theme {
         .ace-list-item.view-Info {
             @include hover-focus() {
-                border: $views-list-border-focus;
-                background-color: $views-list-background-color-focus;
-                color: color-yiq($views-list-background-color-focus);
+                border: $ace-object-views-list-border-focus;
+                background-color: $ace-object-views-list-background-color-focus;
+                color: color-yiq($ace-object-views-list-background-color-focus);
             }
         }
     }

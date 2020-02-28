@@ -1,7 +1,7 @@
 // label type graphy
 .form-group {
   .label-container label {
-    font-weight: $input-label-font-weight;
+    font-weight: $ace-lib-input-label-font-weight;
   }
 }
 // field config
@@ -9,21 +9,21 @@
   &.ace-field-input,
   &.ace-field-textarea,
   &.ace-field-select {
-    border-radius: $input-field-border-radius;
-    border: $input-field-border-width solid $input-field-border-color;
+    border-radius: $ace-lib-input-field-border-radius;
+    border: $ace-lib-input-field-border-width solid $ace-lib-input-field-border-color;
 
     &:enabled {
-      background-color: $input-field-background-color;
-      color: $input-field-text-color;
+      background-color: $ace-lib-input-field-background-color;
+      color: $ace-lib-input-field-text-color;
     }
     &:not(:enabled),
     &[readonly] {
-      background-color: $input-field-disabled-background-color;
-      color: $input-field-text-color;
+      background-color: $ace-lib-input-field-disabled-background-color;
+      color: $ace-lib-input-field-text-color;
     }
 
     &:focus {
-      border: $input-field-border-width solid $input-field-border-color-focus;
+      border: $ace-lib-input-field-border-width solid $ace-lib-input-field-border-color-focus;
       box-shadow: none;
     }
   }
@@ -31,15 +31,15 @@
 
 // input group border for lookup,email,date,date time, url fields
 .input-group {
-  border-radius: $input-field-border-radius;
-  border: $input-field-border-width solid $input-field-border-color;
-  background-color: $input-field-background-color;
+  border-radius: $ace-lib-input-field-border-radius;
+  border: $ace-lib-input-field-border-width solid $ace-lib-input-field-border-color;
+  background-color: $ace-lib-input-field-background-color;
   overflow: hidden;
   .form-control {
     &.ace-field-input,
     &.ace-field-textarea,
     &.ace-field-select {
-      border-radius: $input-field-border-radius;
+      border-radius: $ace-lib-input-field-border-radius;
       border: 0;
       &:focus {
         border: 0;
@@ -50,23 +50,23 @@
   .input-group-append {
     .ace-btn {
       border: 0;
-      border-radius: $input-field-border-radius;
+      border-radius: $ace-lib-input-field-border-radius;
       &:focus,
       &:active,
       &:not(:disabled):not(.disabled):active,
       &:hover {
-        // border: $input-field-border-width solid $input-field-border-color-focus;
+        // border: $ace-lib-input-field-border-width solid $ace-lib-input-field-border-color-focus;
         box-shadow: none;
-        background-color: $input-field-border-color-focus;
-        color: color-yiq($input-field-border-color-focus);
-        // box-shadow: 0 0 1px 0px $input-field-border-color-focus;
+        background-color: $ace-lib-input-field-border-color-focus;
+        color: color-yiq($ace-lib-input-field-border-color-focus);
+        // box-shadow: 0 0 1px 0px $ace-lib-input-field-border-color-focus;
       }
     }
   }
 
   &:focus-within {
-    border: $input-field-border-width solid $input-field-border-color-focus;
-    box-shadow: 0 0 1px 0px $input-field-border-color-focus;
+    border: $ace-lib-input-field-border-width solid $ace-lib-input-field-border-color-focus;
+    box-shadow: 0 0 1px 0px $ace-lib-input-field-border-color-focus;
   }
 }
 
@@ -74,23 +74,23 @@
 
 .form-group {
   &.has-error {
-    color: $input-field-error-text-color;
+    color: $ace-lib-input-field-error-text-color;
     .form-control {
-      border-color: $input-field-error-border-color;
+      border-color: $ace-lib-input-field-error-border-color;
     }
     .input-group {
-      border: $input-field-border-width solid $input-field-error-border-color;
+      border: $ace-lib-input-field-border-width solid $ace-lib-input-field-error-border-color;
       box-shadow: none;
     }
     .help-block {
       .block-element {
-        font-size: $input-field-error-font-size;
+        font-size: $ace-lib-input-field-error-font-size;
       }
     }
   }
 }
 .section-has-error {
-  color: $input-field-error-text-color;
+  color: $ace-lib-input-field-error-text-color;
 }
 
 //field type specific config
@@ -123,6 +123,9 @@ aac-lookup-field {
         @if $input-type-lookup-display-open-record-button == false {
           display: none;
         }
+      }
+      .btn-outline-secondary {
+        color: $input-type-lookup-display-search-record-button-color;
       }
     }
   }
@@ -165,4 +168,9 @@ aac-picklist-field {
       background-color: transparent;
     }
   }
+}
+
+// placeholder
+input.ace-field-input.form-control::placeholder {
+  color: $ace-lib-input-field-placeholder-color;
 }

@@ -1,20 +1,20 @@
 .mat-datepicker-content {
-    background-color: $datepicker-background-color;
-    border-width: $datepicker-border-width;
+    background-color: $ace-lib-datepicker-background-color;
+    border-width: $ace-lib-datepicker-border-width;
     border-style: solid;
-    border-color: $datepicker-border-color;
+    border-color: $ace-lib-datepicker-border-color;
   
     .mat-calendar-header {
         .mat-calendar-controls {
             button {
-                color: color-yiq($datepicker-control-btn-background-color);
-                background-color: $datepicker-control-btn-background-color;
+                color: color-yiq($ace-lib-datepicker-control-btn-background-color);
+                background-color: $ace-lib-datepicker-control-btn-background-color;
                 @include hover-focus() {
-                    outline: $datepicker-btn-outline-style;
+                    outline: $ace-lib-datepicker-btn-outline-style;
                 }
             }
             .mat-icon-button {
-                border-radius: $datepicker-control-btn-border-radius;
+                border-radius: $ace-lib-datepicker-control-btn-border-radius;
                 .mat-button-ripple {
                     display: none;
                 }
@@ -24,18 +24,18 @@
     .mat-calendar-content {
         .mat-calendar-table {
             .mat-calendar-table-header th {
-                color: $datepicker-table-header-color;
-                font-weight: $datepicker-table-header-font-weight;
+                color: $ace-lib-datepicker-table-header-color;
+                font-weight: $ace-lib-datepicker-table-header-font-weight;
             }
             .mat-calendar-body-active {
-                background-color: $datepicker-date-focus-background-color;
-                color: color-yiq($datepicker-date-focus-background-color);
+                background-color: $ace-lib-datepicker-date-focus-background-color;
+                color: color-yiq($ace-lib-datepicker-date-focus-background-color);
             }
             .mat-calendar-body-cell-content {
-                border-radius: $datepicker-table-cell-radius;
+                border-radius: $ace-lib-datepicker-table-cell-radius;
                 &.mat-calendar-body-selected {
-                    background-color: $datepicker-date-selected-background-color;
-                    color: color-yiq($datepicker-date-selected-background-color);
+                    background-color: $ace-lib-datepicker-date-selected-background-color;
+                    color: color-yiq($ace-lib-datepicker-date-selected-background-color);
                 }
             }
         }

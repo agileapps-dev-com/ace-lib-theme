@@ -1,26 +1,35 @@
 ace-view-configuration {
     .custom-toggle .mat-button-toggle.mat-button-toggle-checked {
-        background: $view-config-filter-toggle-button-checked-color;
-        color: color-yiq($view-config-filter-toggle-button-checked-color);
+        background: $ace-view-config-filter-toggle-button-background;
+        color: color-yiq($ace-view-config-filter-toggle-button-background);
     }
     .custom-toggle .mat-button-toggle {
-        border: 1px solid $view-config-filter-toggle-button-unchecked-color;
-        border-radius: 4px;
+        border: 1px solid $ace-view-config-filter-toggle-button-background;
+        border-radius: 0px;
     }
     .wrapper .line {
-        background: $view-config-filter-line-color;
+        background: transparent;
     }
     .body-container .filter-section {
-        background: $filter-section-background;
+        background: $ace-view-config-filter-section-background;
     }
     .form-container .mat-icon-button {
-        color: $add-new-filter-button-color;
+        color: $ace-view-config-add-new-filter-button-color;
+        background: transparent;
     }
     .date-filter-section .remove-button {
-        background: $remove-filter-button-color;
-        color: color-yiq($remove-filter-button-color);
+        background: $ace-view-config-remove-filter-button-color;
+        color: color-yiq($ace-view-config-remove-filter-button-color);
     }
     .mat-dialog-content .mat-tab-body-wrapper {
         background: transparent;
+    }
+    .available-field-list, .selected-field-list {
+        background: $ace-lib-input-field-background-color;
+        color: $ace-lib-input-field-text-color;
+        &:focus {
+            border: $border-width solid theme-color("primary");
+            outline: none;
+        }
     }
 }

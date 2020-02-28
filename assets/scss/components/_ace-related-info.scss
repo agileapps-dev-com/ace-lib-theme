@@ -1,8 +1,14 @@
 ace-related-info {
   .new-record-button {
     .mat-paginator-outer-container {
-      background: $related-info-header-background;
-      color: $related-info-header-text-color;
+      background: $ace-related-info-header-background;
+      color: $ace-related-info-header-text-color;
     }
+  }
+  .table-container mat-table.mat-table.table-border mat-header-row.mat-header-row .mat-header-cell.aac-table-item {
+    display: flex;
+  }
+  .table-paginator.mat-paginator {
+    background-color: transparent;
   }
 }

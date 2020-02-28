@@ -2,17 +2,17 @@ mat-table {
   &.mat-table {
     width: 100%;
     margin-bottom: $spacer;
-    color: $table-color;
-    background-color: $table-bg; // Reset for nesting within parents with `background-color`.
+    color: $ace-lib-table-color;
+    background-color: $ace-lib-table-bg; // Reset for nesting within parents with `background-color`.
 
     .mat-header-cell,
     .mat-cell {
-      padding: $table-cell-padding;
+      padding: $ace-lib-table-cell-padding;
       vertical-align: top;
-      border-top: $table-border-width solid $table-border-color;
+      border-top: $ace-lib-table-border-width solid $ace-lib-table-border-color;
 
       &.ace-multi-select-column {
-        flex-grow: $table-select-cell-width;
+        flex-grow: $ace-lib-table-select-cell-width;
         min-width: inherit;
         max-width: 120px;
       }
@@ -20,13 +20,13 @@ mat-table {
 
     .mat-header-row .mat-header-cell {
       vertical-align: bottom;
-      border-bottom: (2 * $table-border-width) solid $table-border-color;
-      color: $table-head-color;
-      background-color: $table-head-bg;
+      border-bottom: (2 * $ace-lib-table-border-width) solid $ace-lib-table-border-color;
+      color: $ace-lib-table-head-color;
+      background-color: $ace-lib-table-head-bg;
 
       &:not(.select-box-list),
       &:not(.profile-pic-column) {
-        padding: $table-cell-padding;
+        padding: $ace-lib-table-cell-padding;
         min-width: inherit;
       }
     }
@@ -47,16 +47,16 @@ mat-table {
 
 .ace-table-bordered {
   .mat-table {
-    border: $table-border-width solid $table-border-color;
+    border: $ace-lib-table-border-width solid $ace-lib-table-border-color;
 
     .mat-header-cell,
     .mat-cell {
-      border: $table-border-width solid $table-border-color;
+      border: $ace-lib-table-border-width solid $ace-lib-table-border-color;
     }
 
     .mat-header-row {
       .mat-header-cell {
-        border-bottom-width: 2 * $table-border-width;
+        border-bottom-width: 2 * $ace-lib-table-border-width;
       }
     }
   }
@@ -80,8 +80,8 @@ mat-table {
 
 .ace-table-striped {
   .mat-table {
-    .mat-row:nth-of-type(#{$table-striped-order}) {
-      background-color: $table-accent-bg;
+    .mat-row:nth-of-type(#{$ace-lib-table-striped-order}) {
+      background-color: $ace-lib-table-accent-bg;
     }
   }
 }
@@ -94,8 +94,8 @@ mat-table {
   .mat-table {
     .mat-row {
       @include hover() {
-        color: $table-hover-color;
-        background-color: $table-hover-bg;
+        color: $ace-lib-table-hover-color;
+        background-color: $ace-lib-table-hover-bg;
       }
     }
   }

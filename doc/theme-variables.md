@@ -1,0 +1,37 @@
+# Theme variables
+Below varible availables are availble to customize.
+    **Important:** Every variable definitions should end with `;` symbol.
+## General 
+* [Global](variables/global.md)
+* [Colors](variables/colors.md)
+* [Typography](variables/typography.md)
+* [Tables](variables/tables.md)
+* [Buttons](variables/buttons.md)
+* [Checkbox](variables/checkbox.md)
+* [Radio button](variables/radio_button.md)
+* [Input](variables/input.md)
+* [Paginator](variables/paginator.md)
+* [Progressbar](variables/progressbar.md)
+* [Date picker](variables/date_picker.md)
+* [Tooltip](variables/tooltip.md)
+* [Tabs](variables/tabs.md)
+* [Autocomplete](variables/autocomplete.md)
+* [Chip](variables/chip.md)
+* [Menu](variables/menu.md)
+* [Dialog](variables/dialog.md)
+* [Divider](variables/divider.md)
+* [Accordion](variables/accordion.md)
+
+## Component Specific
+* [<ace-activity-history\>](variables/component/activity-history.md)
+* [<ace-app-tabs-list\>](variables/component/app-tabs-list.md)
+* [<ace-object-views-list\>](variables/component/object-views-list.md)
+* [<ace-record-actions\>](variables/component/record-actions.md)
+* [<ace-record-attachment\>](variables/component/record-attachment.md)
+* [<ace-record-process\>](variables/component/record-process.md)
+* [<ace-record-table-view\>](variables/component/record-table-view.md)
+* [<ace-record-task-view\>](variables/component/record-task-view.md)
+* [<ace-related-info\>](variables/component/related-info.md)
+* [<ace-role-switcher\>](variables/component/role-switcher.md)
+* [<ace-user-profile\>](variables/component/user-profile.md)
+* [<ace-view-config\>](variables/component/view-config.md)

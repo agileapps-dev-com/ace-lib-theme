@@ -1,26 +1,29 @@
 aac-activity-history {
     .date-style {
-      color: $activity-history-date-color;
+      color: $ace-activity-history-date-color;
     }
     
     .time-line-container:before {
-      border-right: 4px solid $activity-history-time-line-color;
+      border-right: 4px solid $ace-activity-history-time-line-color;
     }
     .timeline-divider {
-      border: 7px solid $activity-history-mat-divider-color;
+      border: 7px solid $ace-activity-history-timeline-divider-color;
     }
     .timeline-icon {
-      border: 1px solid $activity-history-image-border-color;
+      border: 1px solid $ace-activity-history-image-border-color;
       width: 32px;
       height: 32px;
-      border-radius: $activity-history-icon-border-radius;
+      border-radius: $ace-activity-history-icon-border-radius;
       .icon-elem {
-        border-radius: $activity-history-icon-border-radius;
+        border-radius: $ace-activity-history-icon-border-radius;
         margin-top: 3px;
       }
     }
     .timeline-image {
-      box-shadow: 1px 1px 1px 0px $activity-history-image-box-shadow-color;
+      box-shadow: 1px 1px 1px 0px $ace-activity-history-image-box-shadow-color;
+    }
+    .time-line-container .time-line-item .attachment-icon.mat-icon {
+      background: transparent;
     }
   }
   

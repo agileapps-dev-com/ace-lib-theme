@@ -3,11 +3,11 @@
     .mat-radio-label {
       .mat-radio-container {
         .mat-radio-outer-circle {
-          border-width: $radio-border-width;
-          border-color: $radio-color;
+          border-width: $ace-lib-radio-button-border-width;
+          border-color: $ace-lib-radio-button-color;
         }
         .mat-radio-inner-circle {
-          background-color: $radio-color;
+          background-color: $ace-lib-radio-button-color;
         }
       }
     }
@@ -16,10 +16,10 @@
       .mat-radio-label {
         .mat-radio-container {
           .mat-radio-outer-circle {
-            border-color: scale-color($radio-color, $lightness: -30%);
+            border-color: scale-color($ace-lib-radio-button-color, $lightness: -30%);
           }
           .mat-radio-inner-circle {
-            background-color: scale-color($radio-color, $lightness: -30%);
+            background-color: scale-color($ace-lib-radio-button-color, $lightness: -30%);
           }
         }
       }
@@ -45,7 +45,7 @@
       content: "";
       width: 1rem;
       height: 1rem;
-      border: $radio-border-width solid $radio-color;
+      border: $ace-lib-radio-button-border-width solid $ace-lib-radio-button-color;
       border-radius: 50%;
       left: 0;
       top: 0;
@@ -59,7 +59,7 @@
         content: "";
         width: 0.5rem;
         height: 0.5rem;
-        background: $radio-color none;
+        background: $ace-lib-radio-button-color none;
         top: 0.25rem;
         border-radius: 50%;
         left: 0.25rem;
@@ -70,10 +70,10 @@
   
     &:focus-within {
       &:before {
-        border-color:scale-color($radio-color, $lightness: -30%);
+        border-color:scale-color($ace-lib-radio-button-color, $lightness: -30%);
       }
       &:after {
-        background-color:scale-color($radio-color, $lightness: -30%);
+        background-color:scale-color($ace-lib-radio-button-color, $lightness: -30%);
       }
     }
   }

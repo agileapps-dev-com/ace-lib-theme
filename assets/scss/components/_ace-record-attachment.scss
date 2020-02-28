@@ -2,15 +2,22 @@ ace-record-attachment {
     .header-container {
         
         h2 {
-            font-size: $record-attachment-header-font-size;
+            font-size: $ace-record-attachment-header-font-size;
         }
     }
     .attachment-box {
-        .mat-list-item-content .mat-button {
-            background-color: $record-attachment-button-background-color;
-            @include hover-focus-active() {
-                color: $record-attachment-button-hover-color;
-                background-color: $record-attachment-button-hover-background-color;
+        .mat-list-item-content {
+            .mat-button {
+                background-color: $ace-record-attachment-item-background-color;
+                color: $ace-record-attachment-item-color;
+                @include hover-focus-active() {
+                    color: $ace-record-attachment-item-hover-color;
+                    background-color: $ace-record-attachment-item-hover-background-color;
+                }
+            }
+            .mat-icon-button {
+                background-color: transparent;
+                color: $ace-record-attachment-item-delete-btn-color;
             }
         }
     }

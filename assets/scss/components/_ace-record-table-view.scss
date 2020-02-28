@@ -1,13 +1,15 @@
 ace-records-table-view {
     .mat-table {
         .profile-pic {
-            border-radius: $records-view-profilePic-border-radius;
+            border-radius: $ace-record-table-view-profilePic-border-radius;
         }
         .mat-column-actionButton.action-column .mat-icon-button {
-            border-radius: $records-view-actionMenu-btn-border-radius;
+            border-radius: $ace-record-table-view-actionMenu-btn-border-radius;
+            background-color: $ace-record-table-view-actionMenu-btn-background-color;
+            color: $ace-record-table-view-actionMenu-btn-color;
         }
     }
     .load-more-data {
-        background-color:  $records-view-loadmore-background-color;
+        background-color:  $ace-record-table-view-loadmore-background-color;
     }
 }

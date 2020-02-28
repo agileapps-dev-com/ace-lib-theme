@@ -4,15 +4,15 @@ ace-role-switcher {
             button {
                 @include hover-focus() {
                     outline: none;
-                    border: $role-switcher-list-border-focus;
-                    background-color: $role-switcher-list-background-color-focus;
-                    color: color-yiq($role-switcher-list-background-color-focus);
+                    border: $ace-role-switcher-list-border-focus;
+                    background-color: $ace-role-switcher-list-background-color-focus;
+                    color: color-yiq($ace-role-switcher-list-background-color-focus);
                 }
             }
         }
         .ace-list-item.active-item {
-            background-color: $role-switcher-list-active-item-background-color;
-            color: color-yiq($role-switcher-list-active-item-background-color);
+            background-color: $ace-role-switcher-list-active-item-background-color;
+            color: color-yiq($ace-role-switcher-list-active-item-background-color);
         }
     }
 }

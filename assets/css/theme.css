@@ -26,6 +26,7 @@
 /* ========== AUTO COMPLETE ========== */
 /* ========== TAB ========== */
 /* ========== DATE PICKER ========== */
+/* ========== ACCORDION ========== */
 /* ========== ELEMENT SPECIFIC ========== */
 /* ========== ACE-RECORD-TABLE-VIEW ========== */
 /* ========== ACE-RECORD-TASK-VIEW ========== */
@@ -365,7 +366,11 @@ aac-email-field .input-group-append {
 aac-lookup-field .input-group .input-group-append .ace-field-link-btn {
   display: none; }
 
-/* line 133, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_input-fields.scss */
+/* line 127, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_input-fields.scss */
+aac-lookup-field .input-group .input-group-append .btn-outline-secondary {
+  color: #6c757d; }
+
+/* line 136, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_input-fields.scss */
 aac-file-field .ace-btn {
   background-color: #03dac6;
   color: #fff;
@@ -377,7 +382,7 @@ aac-file-field .ace-btn {
     background-color: #02b4a4;
     border-color: #02a898;
     box-shadow: none; }
-  /* line 146, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_input-fields.scss */
+  /* line 149, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_input-fields.scss */
   aac-file-field .ace-btn.imageField-btn {
     background-color: #03dac6;
     color: #fff;
@@ -390,9 +395,13 @@ aac-file-field .ace-btn {
       border-color: #02a898;
       box-shadow: none; }
 
-/* line 164, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_input-fields.scss */
+/* line 167, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_input-fields.scss */
 aac-picklist-field .input-group input.mat-chip-input {
   background-color: transparent; }
+
+/* line 174, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_input-fields.scss */
+input.ace-field-input.form-control::placeholder {
+  color: #6200ee; }
 
 /* line 3, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_checkbox.scss */
 .mat-checkbox .mat-checkbox-layout .mat-checkbox-frame {
@@ -888,6 +897,23 @@ mat-chip-list .mat-chip {
   .mat-autocomplete-panel .mat-option .assign-image {
     background: #6c757d; }
 
+/* line 3, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_accordion.scss */
+.mat-accordion mat-expansion-panel .mat-expansion-panel-header {
+  padding: 0px 8px;
+  background: transparent; }
+
+/* line 7, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_accordion.scss */
+.mat-accordion mat-expansion-panel:hover:not(.mat-expanded) {
+  border: 1px solid #6200ee; }
+
+/* line 10, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_accordion.scss */
+.mat-accordion mat-expansion-panel:focus:not(.mat-expanded) {
+  border: 1px solid #6200ee; }
+
+/* line 13, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_accordion.scss */
+.mat-accordion mat-expansion-panel .mat-expanded {
+  background: transparent; }
+
 /* line 3, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_dialog.scss */
 .mat-dialog-container .dialog-title-container .mat-dialog-title {
   line-height: 1.5;
@@ -960,6 +986,25 @@ mat-chip-list .mat-chip {
       color: #fff;
       border-color: #343a40; }
 
+/* line 72, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_dialog.scss */
+.mat-dialog-container aac-record-task-create aac-record-task-multistep .task-form-row.taskForm-container {
+  background-color: transparent; }
+
+/* line 79, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_dialog.scss */
+.mat-dialog-container aac-file-uploader .mat-slide-toggle .mat-slide-toggle-bar {
+  background-color: #212529; }
+
+/* line 82, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_dialog.scss */
+.mat-dialog-container aac-file-uploader .mat-slide-toggle .mat-slide-toggle-thumb {
+  background-color: #6200ee; }
+
+/* line 86, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_dialog.scss */
+.mat-dialog-container aac-file-uploader .image-container .mat-input-element {
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  color: #212529; }
+
 /* line 2, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_divider.scss */
 mat-divider.mat-divider {
   border-color: #dee2e6; }
@@ -1011,7 +1056,8 @@ mat-tooltip-component .mat-tooltip {
   background-color: #fff; }
   /* line 7, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/_matmenu.scss */
   .mat-menu-panel .mat-menu-content .mat-menu-item {
-    background: transparent; }
+    background: transparent;
+    color: #212529; }
     /* line 17, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/mixins/_hover.scss */
     .mat-menu-panel .mat-menu-content .mat-menu-item:hover, .mat-menu-panel .mat-menu-content .mat-menu-item:focus {
       color: #fff;
@@ -1023,9 +1069,11 @@ ace-records-table-view .mat-table .profile-pic {
 
 /* line 6, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/components/_ace-record-table-view.scss */
 ace-records-table-view .mat-table .mat-column-actionButton.action-column .mat-icon-button {
-  border-radius: 50%; }
+  border-radius: 50%;
+  background-color: transparent;
+  color: #212529; }
 
-/* line 10, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/components/_ace-record-table-view.scss */
+/* line 12, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/components/_ace-record-table-view.scss */
 ace-records-table-view .load-more-data {
   background-color: #fff; }
 
@@ -1056,6 +1104,10 @@ aac-activity-history .timeline-icon {
 aac-activity-history .timeline-image {
   box-shadow: 1px 1px 1px 0px #6200ee; }
 
+/* line 25, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/components/_ace-activity-history.scss */
+aac-activity-history .time-line-container .time-line-item .attachment-icon.mat-icon {
+  background: transparent; }
+
 /* line 3, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/components/_ace-record-task-view.scss */
 ace-record-task-view .header-container h2 {
   font-size: 2rem; }
@@ -1072,6 +1124,18 @@ ace-record-task-view .sidePanel-componet-body .mat-subheader h3 {
 ace-record-task-view .sidePanel-componet-body .task-action-button button:not(:last-child) {
   margin-right: 4px; }
 
+/* line 23, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/components/_ace-record-task-view.scss */
+ace-record-task-view .sidePanel-componet-body aac-record-task-action .action-buttons button:not(:last-child) {
+  margin-right: 4px; }
+
+/* line 28, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/components/_ace-record-task-view.scss */
+ace-record-task-view .sidePanel-componet-body .mat-list-base .mat-list-item.mat-3-line, ace-record-task-view .sidePanel-componet-body .mat-list-base .mat-list-option.mat-3-line {
+  height: auto; }
+
+/* line 32, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/components/_ace-record-task-view.scss */
+ace-record-task-view .action-buttons button {
+  margin-left: 4px; }
+
 /* line 3, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/components/_ace-record-process.scss */
 ace-record-process .header-container h2 {
   font-size: 2rem; }
@@ -1080,13 +1144,19 @@ ace-record-process .header-container h2 {
 ace-record-attachment .header-container h2 {
   font-size: 2rem; }
 
-/* line 9, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/components/_ace-record-attachment.scss */
+/* line 10, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/components/_ace-record-attachment.scss */
 ace-record-attachment .attachment-box .mat-list-item-content .mat-button {
-  background-color: transparent; }
+  background-color: transparent;
+  color: #212529; }
   /* line 32, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/mixins/_hover.scss */
   ace-record-attachment .attachment-box .mat-list-item-content .mat-button:hover, ace-record-attachment .attachment-box .mat-list-item-content .mat-button:focus, ace-record-attachment .attachment-box .mat-list-item-content .mat-button:active {
     color: #fff;
     background-color: #7615ff; }
+
+/* line 18, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/components/_ace-record-attachment.scss */
+ace-record-attachment .attachment-box .mat-list-item-content .mat-icon-button {
+  background-color: transparent;
+  color: #6200ee; }
 
 /* line 17, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/mixins/_hover.scss */
 ace-role-switcher div.ace-theme .ace-list-item button:hover, ace-role-switcher div.ace-theme .ace-list-item button:focus {
@@ -1112,6 +1182,16 @@ ace-record-actions div.ace-theme .actions-list li:hover, ace-record-actions div.
   background-color: #f8f9fa;
   color: #212529; }
 
+/* line 16, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/components/_ace-record-actions.scss */
+aac-merge-dialog .mat-step-header .mat-step-icon.mat-step-icon-selected {
+  background-color: #6200ee;
+  color: #fff; }
+
+/* line 21, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/components/_ace-record-actions.scss */
+aac-merge-dialog .mat-step-header .mat-step-icon {
+  background-color: #e9ecef;
+  color: #212529; }
+
 /* line 17, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/mixins/_hover.scss */
 ace-app-tabs-list ul.objects-container li a.item-info:hover, ace-app-tabs-list ul.objects-container li a.item-info:focus {
   border: 1px solid #6200ee;
@@ -1129,6 +1209,14 @@ ace-related-info .new-record-button .mat-paginator-outer-container {
   background: transparent;
   color: inherit; }
 
+/* line 8, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/components/_ace-related-info.scss */
+ace-related-info .table-container mat-table.mat-table.table-border mat-header-row.mat-header-row .mat-header-cell.aac-table-item {
+  display: flex; }
+
+/* line 11, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/components/_ace-related-info.scss */
+ace-related-info .table-paginator.mat-paginator {
+  background-color: transparent; }
+
 /* line 2, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/components/_ace-view-config.scss */
 ace-view-configuration .custom-toggle .mat-button-toggle.mat-button-toggle-checked {
   background: #6200ee;
@@ -1145,29 +1233,39 @@ ace-view-configuration .wrapper .line {
 
 /* line 13, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/components/_ace-view-config.scss */
 ace-view-configuration .body-container .filter-section {
-  background: #f8f9fa; }
+  background: transparent; }
 
 /* line 16, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/components/_ace-view-config.scss */
 ace-view-configuration .form-container .mat-icon-button {
-  color: #6200ee; }
+  color: #6200ee;
+  background: transparent; }
 
-/* line 19, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/components/_ace-view-config.scss */
+/* line 20, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/components/_ace-view-config.scss */
 ace-view-configuration .date-filter-section .remove-button {
   background: #6200ee;
   color: #fff; }
 
-/* line 23, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/components/_ace-view-config.scss */
+/* line 24, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/components/_ace-view-config.scss */
 ace-view-configuration .mat-dialog-content .mat-tab-body-wrapper {
   background: transparent; }
+
+/* line 27, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/components/_ace-view-config.scss */
+ace-view-configuration .available-field-list, ace-view-configuration .selected-field-list {
+  background: #f8f9fa;
+  color: #212529; }
+  /* line 30, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/components/_ace-view-config.scss */
+  ace-view-configuration .available-field-list:focus, ace-view-configuration .selected-field-list:focus {
+    border: 1px solid #6200ee;
+    outline: none; }
 
 /* line 3, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/components/_ace-user-profile.scss */
 ace-user-profile .user-info-text-block .profile-name {
   font-size: 1rem;
   font-weight: lighter;
-  font-variant: small-caps; }
+  text-transform: uppercase; }
 
 /* line 6, projects/ace-lib/src/assets/themes/ace-lib-theme/scss/components/_ace-user-profile.scss */
 ace-user-profile .user-info-text-block .user-role {
   font-size: 1rem;
   font-weight: lighter;
-  font-variant: small-caps; }
+  text-transform: uppercase; }
