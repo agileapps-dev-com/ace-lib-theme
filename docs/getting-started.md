@@ -1,8 +1,8 @@
-# Theming my ace-lib components
+# Theming the ace-lib Components
 ## What is an 'ace-lib-theme'?
-A 'ace-lib-theme' is the set of colors and typography definitions that will be applied on the ace-lib components. Using ace-lib-theme package, you can customize the color and typography of the ace-lib components. 
+An 'ace-lib-theme' is a set of colors and typography definitions that are applied on the ace-lib components. Using the ace-lib-theme package, you can customize the color and typography of the ace-lib components. 
 
-An ace-lib-theme package contains the core `scss` files which are used to create a theme. These `scss` files needs to be compiled as `css`.
+The ace-lib-theme package contains the core `scss` files that are used to create a theme. Compile these `scss` files as `css`.
 
 Explore the available [Theme-variables](theme-variables.md).
 
