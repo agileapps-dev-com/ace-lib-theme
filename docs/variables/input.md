@@ -12,7 +12,7 @@ Below date picker variables are available for customizing.
 | $ace-lib-input-field-background-color-focus    | #f8f9fa       | Sets the background-color property for the input field.        |
 | $ace-lib-input-field-border-color-focus        | #6200ee       | Sets the focused border color property for the input field.    |
 | $ace-lib-input-field-border-radius             | 0             | Sets the border radius property for the input field.           |
-| $ace-lib-input-field-placeholder-color         | #6200ee       | Sets the placeholder text color for the input field.           |
+| $ace-lib-input-field-placeholder-color         | #212529       | Sets the placeholder text color for the input field.           |
 | $ace-lib-input-field-error-border-color        | #b00020       | Sets the border color for the input field in error state.      |
 | $ace-lib-input-field-error-text-color          | #b00020       | Sets the text color for the input field in error state.        |
 | $ace-lib-input-field-error-font-size           | 85%           | Sets the font size property for the input field in error state.|

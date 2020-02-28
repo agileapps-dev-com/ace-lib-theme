@@ -2,6 +2,8 @@ ace-record-actions {
     div.ace-theme {
         .actions-list {
             li {
+                background-color: $ace-record-action-list-background-color;
+                color: color-yiq($ace-record-action-list-background-color);
                 @include hover-focus() {
                     border: $ace-record-action-list-border-focus;
                     background-color: $ace-record-action-list-background-color-focus;

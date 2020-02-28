@@ -2,6 +2,8 @@ ace-role-switcher {
     div.ace-theme {
         .ace-list-item {
             button {
+                background-color: $ace-role-switcher-list-background-color;
+                color: color-yiq($ace-role-switcher-list-background-color);
                 @include hover-focus() {
                     outline: none;
                     border: $ace-role-switcher-list-border-focus;

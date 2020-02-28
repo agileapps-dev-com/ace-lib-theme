@@ -1,6 +1,8 @@
 ace-object-views-list {
     div.ace-theme {
         .ace-list-item.view-Info {
+            background-color: $ace-object-views-list-background-color;
+            color: color-yiq($ace-object-views-list-background-color);
             @include hover-focus() {
                 border: $ace-object-views-list-border-focus;
                 background-color: $ace-object-views-list-background-color-focus;

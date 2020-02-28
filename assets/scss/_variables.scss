@@ -120,13 +120,11 @@ $ace-lib-table-bg: null !default;
 $ace-lib-table-accent-bg: rgba($black, 0.05) !default;
 $ace-lib-table-hover-color: $ace-lib-table-color !default;
 $ace-lib-table-hover-bg: rgba($black, 0.075) !default;
-$ace-lib-table-active-bg: $ace-lib-table-hover-bg !default; // does not use anywhere.
 $ace-lib-table-border-width: $border-width !default;
 $ace-lib-table-border-color: $border-color !default;
 $ace-lib-table-head-bg: $gray-200 !default;
 $ace-lib-table-head-color: $gray-700 !default;
 $ace-lib-table-striped-order: odd !default;
-$ace-lib-table-caption-color: $text-muted !default; // does not use anywhere.
 
 /* ========== FORM INPUTS ========== */
 $ace-lib-input-label-font-weight: $font-weight-normal !default;
@@ -140,7 +138,7 @@ $ace-lib-input-field-disabled-background-color: darken(theme-color("light"), 5%)
 $ace-lib-input-field-background-color-focus: $ace-lib-input-field-background-color !default;
 $ace-lib-input-field-border-color-focus: theme-color("primary") !default;
 $ace-lib-input-field-border-radius: $border-radius !default;
-$ace-lib-input-field-placeholder-color: theme-color("primary") !default;
+$ace-lib-input-field-placeholder-color: $body-color !default;
 
 // Checkbox
 $ace-lib-checkbox-border-width: $border-width !default;
@@ -195,7 +193,6 @@ $ace-lib-autocomplete-active-user-image-background: transparent !default;
 /* ========== TAB ========== */
 $ace-lib-tablist-header-border-width: 0 0 $border-width 0 !default; // top right bottom left
 $ace-lib-tablist-header-border-color: transparent transparent $border-color transparent !default;
-$ace-lib-tablist-header-tab-focused-background-color: transparent !default; // does not used anywhere.
 $ace-lib-tablist-header-tab-focused-color: theme-color("primary") !default;
 $ace-lib-tablist-header-tab-active-link-bar-color: theme-color("primary") !default;
 $ace-lib-tablist-content-border-width: 0 0 0 0 !default; // top right bottom left
@@ -246,19 +243,23 @@ $ace-record-attachment-item-hover-color: color-yiq(lighten(theme-color("primary"
 $ace-record-attachment-item-hover-background-color: lighten(theme-color("primary"), 7.5%) !default;
 
 /* ========== ACE-ROLE-SWITCHER ========== */
+$ace-role-switcher-list-background-color: theme-color("light") !default;
 $ace-role-switcher-list-background-color-focus: theme-color("light") !default;
 $ace-role-switcher-list-border-focus: $border-width solid theme-color("primary") !default;
 $ace-role-switcher-list-active-item-background-color: theme-color("primary") !default;
 
 /* ========== ACE-RECORD-ACTIONS ========== */
+$ace-record-action-list-background-color: theme-color("light") !default;
 $ace-record-action-list-border-focus: $border-width solid theme-color("primary") !default;
 $ace-record-action-list-background-color-focus: theme-color("light") !default;
 
 /* ========== ACE-OBJECT-VIEWS-LIST ========== */
+$ace-object-views-list-background-color: theme-color("light") !default;
 $ace-object-views-list-border-focus: $border-width solid theme-color("primary") !default;
 $ace-object-views-list-background-color-focus: theme-color("light") !default;
 
 /* ========== ACE-APP-TABS-LIST ========== */
+$ace-app-tabs-list-background-color: theme-color("light") !default;
 $ace-app-tabs-list-background-color-focus: theme-color("light") !default;
 $ace-app-tabs-list-border-focus: $border-width solid theme-color("primary") !default;
 $ace-app-tabs-list-active-item-background-color: theme-color("primary") !default;

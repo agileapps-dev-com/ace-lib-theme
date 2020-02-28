@@ -429,7 +429,7 @@ aac-picklist-field .input-group input.mat-chip-input {
 }
 
 input.ace-field-input.form-control::placeholder {
-  color: #2d999f;
+  color: #212529;
 }
 
 .mat-checkbox .mat-checkbox-layout .mat-checkbox-frame {
@@ -1286,6 +1286,11 @@ ace-record-attachment .attachment-box .mat-list-item-content .mat-icon-button {
   color: #2d999f;
 }
 
+ace-role-switcher div.ace-theme .ace-list-item button {
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
 ace-role-switcher div.ace-theme .ace-list-item button:hover, ace-role-switcher div.ace-theme .ace-list-item button:focus {
   outline: none;
   border: 1px solid #2d999f;
@@ -1298,8 +1303,18 @@ ace-role-switcher div.ace-theme .ace-list-item.active-item {
   color: #fff;
 }
 
+ace-object-views-list div.ace-theme .ace-list-item.view-Info {
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
 ace-object-views-list div.ace-theme .ace-list-item.view-Info:hover, ace-object-views-list div.ace-theme .ace-list-item.view-Info:focus {
   border: 1px solid #2d999f;
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+ace-record-actions div.ace-theme .actions-list li {
   background-color: #f8f9fa;
   color: #212529;
 }
@@ -1317,6 +1332,11 @@ aac-merge-dialog .mat-step-header .mat-step-icon.mat-step-icon-selected {
 
 aac-merge-dialog .mat-step-header .mat-step-icon {
   background-color: #e9ecef;
+  color: #212529;
+}
+
+ace-app-tabs-list ul.objects-container li a.item-info {
+  background-color: #f8f9fa;
   color: #212529;
 }
 
