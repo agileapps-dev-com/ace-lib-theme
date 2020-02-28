@@ -1,5 +1,5 @@
 ## <ace-app-tabs-list\>
-Below variables are available for customizing.
+Following variables are available for customization:
 
 | Variable                                          | Default value                    | Description                               |
 | --------------------------------------------------|----------------------------------|-------------------------------------------|
@@ -8,7 +8,7 @@ Below variables are available for customizing.
 | $ace-app-tabs-list-border-focus                   | 1px solid #6200ee                | Sets the color in focus mode.|
 | $ace-app-tabs-list-active-item-background-color   | #6200ee                          | Sets the background color in active mode of the item.|
 
-Each of the above variable can be assigned with different values as below:
+You can assign different values to each of the above variables as follows:
 ```scss
 $ace-app-tabs-list-border-focus : 1px solid #00ff00;
 

@@ -1,13 +1,13 @@
 ## <ace-user-profile\>
-Below variables are available for customizing.
+Following variables are available for customization:
 
 | Variable                               | Default value                 | Description                 |
 | ---------------------------------------|-------------------------------|-----------------------------|
 | $ace-user-profile-font-size            | 1rem                          | Sets the font size property.|
 | $ace-user-profile-font-weight          | lighter                       | Sets the font weight property.|
-| $user-profile-text-transform           | uppercase                     | Sets the text-transform property. (Example capitalize, lowercase, uppercase, etc.) |
+| $user-profile-text-transform           | uppercase                     | Sets the text-transform property. (For example capitalize, lowercase, uppercase, and so on.) |
 
-Each of the above variable can be assigned with different values as below:
+You can assign different values to each of the above variables as follows:
 ```scss
 $ace-user-profile-font-size : 18px;
 

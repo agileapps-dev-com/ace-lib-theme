@@ -1,5 +1,5 @@
 ## <ace-role-switcher\>
-Below variables are available for customizing.
+Following variables are available for customization:
 
 | Variable                                              | Default value                 | Description                               |
 | ------------------------------------------------------|-------------------------------|-------------------------------------------|
@@ -8,7 +8,7 @@ Below variables are available for customizing.
 | $ace-role-switcher-list-border-focus                  | 1px solid #6200ee             | Sets the border property in focus mode.|
 | $ace-role-switcher-list-active-item-background-color  | #6200ee                       | Sets the background color of active item.|
 
-Each of the above variable can be assigned with different values as below:
+You can assign different values to each of the above variables as follows:
 ```scss
 $ace-role-switcher-list-background-color-focus : #fff;
 

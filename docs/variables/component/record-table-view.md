@@ -1,5 +1,5 @@
 ## <ace-record-table-view\>
-Below variables are available for customizing.
+Following variables are available for customization:
 
 | Variable                                                   | Default value                 | Description                               |
 | -----------------------------------------------------------|-------------------------------|-------------------------------------------|
@@ -8,7 +8,7 @@ Below variables are available for customizing.
 | $ace-record-table-view-loadmore-background-color           | #fff                          | Sets the background color of loadmore button.|
 <!-- last variable contrast check -->
 
-Each of the above variable can be assigned with different values as below:
+You can assign different values to each of the above variables as follows:
 ```scss
 $ace-record-table-view-profilePic-border-radius : 20%;
 

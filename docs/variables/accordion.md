@@ -1,5 +1,5 @@
 ## Accordion
-Below variables are available for customizing.
+Following variables are available for customization:
 
 | Variable                                          | Default value         | Description                                                         |
 | --------------------------------------------------|-----------------------|---------------------------------------------------------------------|
@@ -7,7 +7,7 @@ Below variables are available for customizing.
 | $ace-lib-accordion-header-background-color        | transparent           | Sets the background color of header of accordion.                |
 | $ace-lib-accordion-header-background-on-expansion | transparent           | Sets the background color of header of accordionin expanded mode.|
 
-Each of the above variable can be assigned with different values as below:
+Each of the above variable can be assigned with different values as follows:
 ```scss
 $ace-lib-accordion-border-on-focus: 2px dashed red
 

@@ -1,5 +1,5 @@
 ## <ace-record-task-view\>
-Below variables are available for customizing.
+Following variables are available for customization:
 
 | Variable                                                  | Default value                 | Description                               |
 | ----------------------------------------------------------|-------------------------------|-------------------------------------------|
@@ -7,7 +7,7 @@ Below variables are available for customizing.
 | $ace-record-task-view-header-font-size                    | 2rem                          | Sets the font size of task header.|
 | $ace-record-task-view-subheader-font-size                 | 1.75rem                       | Sets the font size of task subheader.|
 
-Each of the above variable can be assigned with different values as below:
+You can assign different values to each of the above variables as follows:
 ```scss
 $ace-record-task-view-header-btn-border-radius : 20%;
 

@@ -1,5 +1,5 @@
 ## Global variables
-Below variables are available for customizing.
+Following variables are available for customization:
 
 | Variable                  | Default value      | Description                               |
 | --------------------------|--------------------|-------------------------------------------|
@@ -7,10 +7,10 @@ Below variables are available for customizing.
 | $body-color               | #212529            | Sets the text color for the page.|
 | $link-color               | #6200ee            | Sets the text color for all the links in the page.|
 | $link-decoration          | none               | Sets the 'text-decorarion' property value for the link.|
-| $link-hover-color         | #6211ee            | Sets the hover color for all links in the page.|
-| $link-hover-decoration    | underline          | Sets the 'text-decoration' value for the links in hover state.|
+| $link-hover-color         | #6211ee            | Sets the hover color for all the links in a page.|
+| $link-hover-decoration    | underline          | Sets the 'text-decoration' value for the links in the hover state.|
 
-Each of the above variable can be assigned with different values as below:
+You can assign different values to each of the above variables as follows:
 ```scss
 $body-bg : #ababab;
 

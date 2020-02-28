@@ -1,5 +1,5 @@
 ## Datepicker
-Below date picker variables are available for customizing.
+Following date picker variables are available for customization:
 
 | Variable                                          | Default value    | Description                               |
 | --------------------------------------------------|------------------|-------------------------------------------|
@@ -15,7 +15,7 @@ Below date picker variables are available for customizing.
 | $ace-lib-datepicker-date-focus-background-color   | #343a40          | Sets the focused cell background color for the datepicker.|
 | $ace-lib-datepicker-date-selected-background-color| #6200ee          | Sets the selected cell background color for the datepicker.|
 
-Each of the above variable can be assigned with different values as below:
+You can assign different values to each of the above variables as follows:
 ```scss
 $ace-lib-datepicker-date-focus-background-color : map-get($theme-colors, "purple"); // This map color must be present in the $theme-colors map.
 
