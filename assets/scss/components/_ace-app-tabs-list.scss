@@ -1,19 +1,19 @@
-ace-app-tabs-list {
+ace-app-nav-list {
     ul.objects-container {
         li {
             a.item-info {
-                background-color: $ace-app-tabs-list-background-color;
-                color: color-yiq($ace-app-tabs-list-background-color);
+                background-color: $ace-app-nav-list-background-color;
+                color: color-yiq($ace-app-nav-list-background-color);
                 @include hover-focus() {
-                    border: $ace-app-tabs-list-border-focus;
-                    background-color: $ace-app-tabs-list-background-color-focus;
-                    color: color-yiq($ace-app-tabs-list-background-color-focus);
+                    border: $ace-app-nav-list-border-focus;
+                    background-color: $ace-app-nav-list-background-color-focus;
+                    color: color-yiq($ace-app-nav-list-background-color-focus);
                     outline: none;
                 }
             }
             a.item-info.active-item {
-                background-color: $ace-app-tabs-list-active-item-background-color;
-                color: color-yiq($ace-app-tabs-list-active-item-background-color);
+                background-color: $ace-app-nav-list-active-item-background-color;
+                color: color-yiq($ace-app-nav-list-active-item-background-color);
             }
         }
     }

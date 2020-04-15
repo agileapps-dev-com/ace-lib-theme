@@ -1,6 +1,6 @@
 # Theme variables
-Below varible availables are availble to customize.
-    **Important:** Every variable definitions should end with `;` symbol.
+Following variables are available for customization:
+    **Important:** Every variable definition should end with `;` symbol.
 ## General 
 * [Global](variables/global.md)
 * [Colors](variables/colors.md)
@@ -24,7 +24,7 @@ Below varible availables are availble to customize.
 
 ## Component Specific
 * [<ace-activity-history\>](variables/component/activity-history.md)
-* [<ace-app-tabs-list\>](variables/component/app-tabs-list.md)
+* [<ace-app-nav-list\>](variables/component/app-tabs-list.md)
 * [<ace-object-views-list\>](variables/component/object-views-list.md)
 * [<ace-record-actions\>](variables/component/record-actions.md)
 * [<ace-record-attachment\>](variables/component/record-attachment.md)

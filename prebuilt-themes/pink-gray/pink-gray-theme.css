@@ -36,7 +36,7 @@
 /* ========== ACE-ROLE-SWITCHER ========== */
 /* ========== ACE-RECORD-ACTIONS ========== */
 /* ========== ACE-OBJECT-VIEWS-LIST ========== */
-/* ========== ACE-APP-TABS-LIST ========== */
+/* ========== ACE-APP-NAV-LIST ========== */
 /* ========== ACE-ACTIVITY-HISTORY ========== */
 /* ========== ACE-RELATED-INFO ========== */
 /* ========== ACE-VIEW-CONFIG ========== */
@@ -1335,19 +1335,19 @@ aac-merge-dialog .mat-step-header .mat-step-icon {
   color: #212529;
 }
 
-ace-app-tabs-list ul.objects-container li a.item-info {
+ace-app-nav-list ul.objects-container li a.item-info {
   background-color: #f8f9fa;
   color: #212529;
 }
 
-ace-app-tabs-list ul.objects-container li a.item-info:hover, ace-app-tabs-list ul.objects-container li a.item-info:focus {
+ace-app-nav-list ul.objects-container li a.item-info:hover, ace-app-nav-list ul.objects-container li a.item-info:focus {
   border: 1px solid #df6589;
   background-color: #f8f9fa;
   color: #212529;
   outline: none;
 }
 
-ace-app-tabs-list ul.objects-container li a.item-info.active-item {
+ace-app-nav-list ul.objects-container li a.item-info.active-item {
   background-color: #df6589;
   color: #fff;
 }

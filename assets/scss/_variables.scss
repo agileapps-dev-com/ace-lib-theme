@@ -258,11 +258,11 @@ $ace-object-views-list-background-color: theme-color("light") !default;
 $ace-object-views-list-border-focus: $border-width solid theme-color("primary") !default;
 $ace-object-views-list-background-color-focus: theme-color("light") !default;
 
-/* ========== ACE-APP-TABS-LIST ========== */
-$ace-app-tabs-list-background-color: theme-color("light") !default;
-$ace-app-tabs-list-background-color-focus: theme-color("light") !default;
-$ace-app-tabs-list-border-focus: $border-width solid theme-color("primary") !default;
-$ace-app-tabs-list-active-item-background-color: theme-color("primary") !default;
+/* ========== ACE-APP-NAV-LIST ========== */
+$ace-app-nav-list-background-color: theme-color("light") !default;
+$ace-app-nav-list-background-color-focus: theme-color("light") !default;
+$ace-app-nav-list-border-focus: $border-width solid theme-color("primary") !default;
+$ace-app-nav-list-active-item-background-color: theme-color("primary") !default;
 
 /* ========== ACE-ACTIVITY-HISTORY ========== */
 $ace-activity-history-date-color: theme-color("primary") !default;
